@@ -1,854 +1,837 @@
-# Awesome Mechanical Engineering Resources
-
-![Banner Image](../master/img/open-end-wrench-2452245_1920.jpg)
-
-_So many free resources are available for computer science students and I am jealous. Therefore, I started making this list for mechanical engineering students. This section contains some overview resources, rules and regulations, and advice._
-
-Check the [contributions guideline](../master/contributions.md)
-
-Discuss this list in [Hacker News](https://news.ycombinator.com/item?id=15337556)
-
-Discuss this list in [Reddit r/engineering](https://redd.it/78dqn5) - *8.3k+ views and 770+ upvotes*
-
-Licensed under [GNU General Public License v3.0](../master/LICENSE.MD)
-
----
-
-<a name="toc"></a>Table of Contents
------------------
-<details open><summary><sup>Hide</sup>/<sub>Show</sub></summary><br/>
-
-[Preamble](#preamble)
-
-[Open Courses](#opencourse)
-
-[General](#general)
-  * [Mechanical Engineering Knowledge Maps](#MechEng-Map)
-  * [Databases](#database)
-  * [Online Calculators](#calculator)
-  * [Tools and Programs](#tool)
-  * [Useful Websites](#useful)
-  * [Patents](#patents)
-  * [Blog and Forums](#blog)
-
-[Mathematics](#math)
-  * [Calculus and Linear Algebra](#calculus)
-  * [Numerical Analysis](#numerical)
-
-[Programming](#programming)
-  * [C++](#cpp)
-  * [Python](#python)
-  * [Julia](#julia)
-  * [Microsoft Excel](#excel)
-  * [Matlab](#matlab)
-  * [R](#r)
-  * [Fortran](#fortran)
-  * [LaTeX](#latex)
-
-[Mechanics](#mechanics)
-  * [Continuum Mechanics](#continuum)
-  * [Statics and Dynamics](#statics&dynamics)
-  * [Strength of Materials](#strength)
-  * [Plasticity](#plasticity)
-
-[Theory of Machines](#machine)
-  * [Mechanism Design](#mechanism-design)
-  * [Control Engineering](#control-engineering)
-  * [Robotics](#robotics)
-
-[Thermal Engineering](#thermo)
-  * [Thermodynamics](#thermodynamics)
-  * [Heat Transfer](#heat-transfer)
-  * [Fluid Mechanics](#fluid-mechanics)
-  * [Gas Dynamics](#gas-dynamics)
-
-[Manufacturing](#manufacturing)
-  * [CAD/CAM](#cadcam)
-  * [Sheet Metal Forming](#sheet-metal-forming)
-  * [Plastic](#plastic)
-
-[Finite Element Analysis](#fea)
-
-[Software Packages](#software)
-  * [for Finite Element Analysis](#for-fea)
-  * [for Control Engineering](#for-control)
-  * [for Robotics](#for-robotics)
-  * [for CAD](#for-cad)
-
-[Sub Reddits](#subreddits)
-
-[Top Publication Venues for Different Fields](#publication)
-  * [Journals](#journals)
-  * [Magazines](#magazines)
-
-[Competitions](#competitions)
-
-[Open Source Design Projects](#openprojects)
-
-[Qualifying/Certification Examinations](#certification)
+<div class="Box-sc-g0xbh4-0 QkQOb js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto" _msttexthash="36964759" _msthash="209">很棒的机械工程资源</h1><a id="user-content-awesome-mechanical-engineering-resources" class="anchor" aria-label="永久链接：很棒的机械工程资源" href="#awesome-mechanical-engineering-resources" _mstaria-label="1892059" _msthash="210"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/m2n037/awesome-mecheng/blob/master/img/open-end-wrench-2452245_1920.jpg"><img src="/m2n037/awesome-mecheng/raw/master/img/open-end-wrench-2452245_1920.jpg" alt="横幅图片" style="max-width: 100%;" _mstalt="170326" _msthash="211"></a></p>
+<p dir="auto"><em _msttexthash="1004857659" _msthash="212">计算机科学专业的学生可以使用这么多免费资源，我很嫉妒。因此，我开始为机械工程专业的学生制作这份清单。本节包含一些概述资源、规则和法规以及建议。</em></p>
+<p dir="auto" _msttexthash="20603453" _msthash="213">查看<a href="/m2n037/awesome-mecheng/blob/master/contributions.md" _istranslated="1">贡献指南</a></p>
+<p dir="auto" _msttexthash="48967152" _msthash="214">在 <a href="https://news.ycombinator.com/item?id=15337556" rel="nofollow" _istranslated="1">Hacker News</a> 中讨论此列表</p>
+<p dir="auto" _msttexthash="174436470" _msthash="215">在 <a href="https://redd.it/78dqn5" rel="nofollow" _istranslated="1">Reddit r/engineering</a> 中讨论此列表 - <em _istranslated="1">8.3k+ 浏览量和 770+ 点赞</em></p>
+<p dir="auto" _msttexthash="81021460" _msthash="216">根据 <a href="/m2n037/awesome-mecheng/blob/master/LICENSE.MD" _istranslated="1">GNU 通用公共许可证 v3.0</a> 获得许可</p>
+<hr>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a name="user-content-toc"></a><font _mstmutation="1" _msttexthash="5308706" _msthash="217">目录</font></h2><a id="user-content-table-of-contents" class="anchor" aria-label="永久链接：目录" href="#table-of-contents" _mstaria-label="634764" _msthash="218"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<details open=""><summary><sup _msttexthash="7070024" _msthash="219">隐藏</sup>/<sub _msttexthash="5609370" _msthash="220">显示</sub></summary><br>
+<p dir="auto"><a href="#preamble" _msttexthash="5876949" _msthash="221">序言</a></p>
+<p dir="auto"><a href="#opencourse" _msttexthash="8619130" _msthash="222">公开课</a></p>
+<p dir="auto"><a href="#general" _msttexthash="5862792" _msthash="223">常规</a></p>
+<ul dir="auto">
+<li><a href="#MechEng-Map" _msttexthash="29862196" _msthash="224">机械工程知识地图</a></li>
+<li><a href="#database" _msttexthash="7842991" _msthash="225">数据库</a></li>
+<li><a href="#calculator" _msttexthash="16863275" _msthash="226">在线计算器</a></li>
+<li><a href="#tool" _msttexthash="14411826" _msthash="227">工具和程序</a></li>
+<li><a href="#useful" _msttexthash="17803552" _msthash="228">有用的网站</a></li>
+<li><a href="#patents" _msttexthash="4006249" _msthash="229">专利</a></li>
+<li><a href="#blog" _msttexthash="14761747" _msthash="230">博客和论坛</a></li>
+</ul>
+<p dir="auto"><a href="#math" _msttexthash="4796480" _msthash="231">数学</a></p>
+<ul dir="auto">
+<li><a href="#calculus" _msttexthash="27364792" _msthash="232">微积分和线性代数</a></li>
+<li><a href="#numerical" _msttexthash="10402574" _msthash="233">数值分析</a></li>
+</ul>
+<p dir="auto"><a href="#programming" _msttexthash="6209866" _msthash="234">编程</a></p>
+<ul dir="auto">
+<li><a href="#cpp" _msttexthash="15600" _msthash="235">C++</a></li>
+<li><a href="#python" _msttexthash="3164070" _msthash="236">蟒</a></li>
+<li><a href="#julia" _msttexthash="8602204" _msthash="237">朱莉娅</a></li>
+<li><a href="#excel" _msttexthash="255151" _msthash="238">Microsoft Excel</a></li>
+<li><a href="#matlab" _msttexthash="12732655" _msthash="239">马特拉布</a></li>
+<li><a href="#r" _msttexthash="7462" _msthash="240">R</a></li>
+<li><a href="#fortran" _msttexthash="96356" _msthash="241">Fortran</a></li>
+<li><a href="#latex" _msttexthash="5261009" _msthash="242">乳胶</a></li>
+</ul>
+<p dir="auto"><a href="#mechanics" _msttexthash="4357769" _msthash="243">力学</a></p>
+<ul dir="auto">
+<li><a href="#continuum" _msttexthash="378040" _msthash="244">Continuum Mechanics</a></li>
+<li><a href="#statics&amp;dynamics" _msttexthash="21555443" _msthash="245">静力学和动力学</a></li>
+<li><a href="#strength" _msttexthash="11113830" _msthash="246">材料强度</a></li>
+<li><a href="#plasticity" _msttexthash="7186608" _msthash="247">可塑性</a></li>
+</ul>
+<p dir="auto"><a href="#machine" _msttexthash="12830480" _msthash="248">机器理论</a></p>
+<ul dir="auto">
+<li><a href="#mechanism-design" _msttexthash="13993174" _msthash="249">机构设计</a></li>
+<li><a href="#control-engineering" _msttexthash="11384204" _msthash="250">控制工程</a></li>
+<li><a href="#robotics" _msttexthash="7063264" _msthash="251">机器人</a></li>
+</ul>
+<p dir="auto"><a href="#thermo" _msttexthash="12938822" _msthash="252">热能工程</a></p>
+<ul dir="auto">
+<li><a href="#thermodynamics" _msttexthash="7567573" _msthash="253">热力学</a></li>
+<li><a href="#heat-transfer" _msttexthash="4849832" _msthash="254">传热</a></li>
+<li><a href="#fluid-mechanics" _msttexthash="10173046" _msthash="255">流体力学</a></li>
+<li><a href="#gas-dynamics" _msttexthash="13200460" _msthash="256">气体动力学</a></li>
+</ul>
+<p dir="auto"><a href="#manufacturing" _msttexthash="8091668" _msthash="257">制造业</a></p>
+<ul dir="auto">
+<li><a href="#cadcam" _msttexthash="9980672" _msthash="258">CAD/CAM 系列</a></li>
+<li><a href="#sheet-metal-forming" _msttexthash="13195455" _msthash="259">钣金成型</a></li>
+<li><a href="#plastic" _msttexthash="5490875" _msthash="260">塑胶</a></li>
+</ul>
+<p dir="auto"><a href="#fea" _msttexthash="15357134" _msthash="261">有限元分析</a></p>
+<p dir="auto"><a href="#software" _msttexthash="7930286" _msthash="262">软件包</a></p>
+<ul dir="auto">
+<li><a href="#for-fea" _msttexthash="23640266" _msthash="263">用于有限元分析</a></li>
+<li><a href="#for-control" _msttexthash="18852678" _msthash="264">用于控制工程</a></li>
+<li><a href="#for-robotics" _msttexthash="13670176" _msthash="265">用于机器人</a></li>
+<li><a href="#for-cad" _msttexthash="4846725" _msthash="266">用于 CAD</a></li>
+</ul>
+<p dir="auto"><a href="#subreddits" _msttexthash="2210845" _msthash="267">子 Reddit</a></p>
+<p dir="auto"><a href="#publication" _msttexthash="47183058" _msthash="268">不同领域的顶级出版场所</a></p>
+<ul dir="auto">
+<li><a href="#journals" _msttexthash="4586517" _msthash="269">期刊</a></li>
+<li><a href="#magazines" _msttexthash="4957134" _msthash="270">杂志</a></li>
+</ul>
+<p dir="auto"><a href="#competitions" _msttexthash="6275412" _msthash="271">比赛</a></p>
+<p dir="auto"><a href="#openprojects" _msttexthash="24320439" _msthash="272">开源设计项目</a></p>
+<p dir="auto"><a href="#certification" _msttexthash="26996879" _msthash="273">资格/认证考试</a></p>
 </details>
-
----
-
-
-## Preamble
-I got inspiration from the countless awesome lists in github.
-
-## <a name="opencourse"></a>Open Courses
-* [MIT OpenCourseWare](https://ocw.mit.edu/courses/find-by-topic/#cat=engineering&subcat=mechanicalengineering)
-* [MIT Online Textbooks](https://ocw.mit.edu/courses/online-textbooks/#mechanical-engineering)
-* [edX](https://www.edx.org/)
-* [InTech](https://www.intechopen.com/books/subject/mechanical-engineering), Open Acess book publisher
-
-## General
-* [ASME The Unwritten Laws of Engineering](http://rotorlab.tamu.edu/me489_SP11/README/2010%20ASME%20Unwritten_Laws_of_Enginering.pdf), by K.J. King and J.G. Skakoon (1944)
-* [A Dictionary of Units of Measurement](https://www.unc.edu/~rowlett/units/) `UNC.edu`
-* [How to be a Star Engineer](http://vlsicad.ucsd.edu/Research/Advice/star_engineer.pdf), by R.E. Kelley
-* [How Complex Systems Fail](http://web.mit.edu/2.75/resources/random/How%20Complex%20Systems%20Fail.pdf), by R.I. Cook (*Rev.D*)
-* [How to Be a Good Graduate Student](http://www.physlink.com/Education/grad_how2.cfm), by M. desJardins
-* [The Art of Insight in Science and Engineering](https://mitpress.mit.edu/books/art-insight-science-and-engineering), by S. Mahajan (2014) `MITPress`
-&emsp; <sub><sup>ISBN: 9780262526548</sup></sub>
-
-#### <a name="MechEng-Map"></a>Mechanical Engineering Knowledge Maps
-* [MECHANICAL ENGINEERING DESIGN](http://www.engineer-assist.com/KnowledgeMap/MechEng_KnowledgeMap_4_files/png_1.htm), knowledge maps with selectable links
-* [AIRCRAFT & MISSILE DESIGN](http://www.engineer-assist.com/KnowledgeMap/MechEng_KnowledgeMap_4_files/png_2.htm), knowledge maps with selectable links
-* [STRUCTURAL DYNAMICS](http://www.engineer-assist.com/KnowledgeMap/MechEng_KnowledgeMap_4_files/png_3.htm), knowledge maps with selectable links
-* [VIBRATION & FATIGUE](http://www.engineer-assist.com/KnowledgeMap/MechEng_KnowledgeMap_4_files/png_4.htm), knowledge maps with selectable links
-
-#### <a name="database"></a>Databases
-* [MatWeb](http://www.matweb.com/), database of material properties
-* [MatBase](https://www.matbase.com/), database of material properties
-* [McMaster-Carr](https://www.mcmaster.com/), components supplier with 3D models and drawings
-* [Traceparts online](https://www.tracepartsonline.net/), CAD parts library
-* [3D Cad Browser](https://www.3dcadbrowser.com/), 3D models
-* [GrabCAD](https://grabcad.com/), models' library and tutorials
-* [Thingiverse](https://www.thingiverse.com/), CAD parts, especially for 3D printing
-* [Direct Industry](http://pdf.directindustry.com/), online catalogs
-
-#### <a name="calculator"></a>Online Calculators
-* [Desmos](https://www.desmos.com/calculator), online graphing calculator
-* [EngineeringPaper.xyz](https://engineeringpaper.xyz), engineering calculator with units support, plotting, and equation solving
-* [fxSolver](https://www.fxsolver.com/), solver for engineering and scientific equations
-* [MechaniCalc](https://mechanicalc.com/), mechanical calculator with extensive documentation
-* [WolframAlpha](https://www.wolframalpha.com/)
-
-#### <a name="tool"></a>Tools and Programs
-* [Linkage](http://blog.rectorsquid.com/linkage-mechanism-designer-and-simulator/), quick prototyping of linkage mechanism
-* [LyX](http://www.lyx.org/), document processor based on LaTeX
-* [SumatraPDF](https://www.sumatrapdfreader.org/), lightweight pdf reader
-* [Pandoc](https://pandoc.org/), a universal document converter
-
-#### <a name="useful"></a>Useful Websites
-* [The American Society of Mechanical Engineers (ASME)](https://www.asme.org/)
-* [eFunda](http://www.efunda.com/home.cfm), engineering fundamentals
-* [Ryerson Stock List](https://www.ryerson.com/stocklist) for structural profiles
-* [How Stuff Works](http://www.howstuffworks.com/) articles explaining how everyday things work
-* [Google Scholar Classic Papers](https://scholar.google.com/citations?view_op=list_classic_articles&hl=en&by=2006)
-* [507 Mechanical Movements](http://507movements.com/), animated movements
-* [Animated Engines](http://www.animatedengines.com/), animated engines
-* [thang010146](https://www.youtube.com/user/thang010146/videos), 2100+ animated mechanisms (downloadable) `youtube`
-* [DMG Lib](http://www.dmg-lib.org/dmglib/main/portal.jsp), Digital Mechanism and Gear Library
-* [KMODDL](http://kmoddl.library.cornell.edu/e-books.php), collection of mechanism and machines `Cornell.edu`
-* [Engineering ToolBox](https://www.engineeringtoolbox.com/)
-* [Thermopedia](http://www.thermopedia.com/)
-* [Wolverine Industries](http://www.wlv.com/products/thermal-management-databooks.html)
-* [Omega Engineering](http://www.omega.com/techref/)
-* [Electrical Training](http://electricaltrainingalliance.org/Resources/Authentication)
-* [NASA Technical Report Server](http://ntrs.nasa.gov/search.jsp)
-#### Patents
-* [Google Patents](https://www.google.com/patents/)
-* [European Patent Office](https://worldwide.espacenet.com/)
-* [United States Patent and Trademark Office](https://www.uspto.gov/)
-
-#### <a name="blog"></a>Blogs and Forums
-* [Engineering StackExchange](https://engineering.stackexchange.com/)
-* [iMechanica](https://imechanica.org)
-* [Eng-Tips Forums](http://www.eng-tips.com/threadarea.cfm)
-* [Physics Forums](https://www.physicsforums.com/forums/mechanical-engineering.101/)
-* [IEEE Spectrum](https://spectrum.ieee.org/)
-* [ScarbsTech](http://scarbsf1.com/), everything technical in F1
-* [GlobalSpec](http://insights.globalspec.com/)
-* [Hackaday](https://hackaday.com/)
-* [Plastics Engineering Blog](https://plasticsengineeringblog.com/)
-* [3D CAD World](http://www.3dcadworld.com/)
-* [Engineers Rule](https://www.engineersrule.com/), blog on SolidWork
-* [AirShaper](https://airshaper.com/blog/page/1), blog on Aerodynamics
-
----
-<div align="right">
-
-<sup>[Back to Top](#toc)</sup> &Hat;
+<hr>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="5876949" _msthash="274">序言</h2><a id="user-content-preamble" class="anchor" aria-label="永久链接：Preamble" href="#preamble" _mstaria-label="362817" _msthash="275"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="110548360" _msthash="276">我从 github 中无数很棒的列表中获得了灵感。</p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a name="user-content-opencourse"></a><font _mstmutation="1" _msttexthash="8619130" _msthash="277">公开课</font></h2><a id="user-content-open-courses" class="anchor" aria-label="永久链接：公开课程" href="#open-courses" _mstaria-label="476385" _msthash="278"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://ocw.mit.edu/courses/find-by-topic/#cat=engineering&amp;subcat=mechanicalengineering" rel="nofollow" _msttexthash="15899195" _msthash="279">MIT 开放课件</a></li>
+<li><a href="https://ocw.mit.edu/courses/online-textbooks/#mechanical-engineering" rel="nofollow" _msttexthash="48474998" _msthash="280">麻省理工学院在线教科书</a></li>
+<li><a href="https://www.edx.org/" rel="nofollow" _msttexthash="29887" _msthash="281">edX</a></li>
+<li _msttexthash="48609392" _msthash="282"><a href="https://www.intechopen.com/books/subject/mechanical-engineering" rel="nofollow" _istranslated="1">InTech，Open</a> Acess 图书出版商</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="5862792" _msthash="283">常规</h2><a id="user-content-general" class="anchor" aria-label="永久链接：常规" href="#general" _mstaria-label="330616" _msthash="284"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li _msttexthash="170335659" _msthash="285"><a href="http://rotorlab.tamu.edu/me489_SP11/README/2010%20ASME%20Unwritten_Laws_of_Enginering.pdf" rel="nofollow" _istranslated="1">ASME 不成文的工程定律</a>，K.J. King 和 J.G. Skakoon 著（1944 年）</li>
+<li><a href="https://www.unc.edu/~rowlett/units/" rel="nofollow" _msttexthash="20641257" _msthash="286">计量单位词典</a> <code>UNC.edu</code></li>
+<li _msttexthash="74145123" _msthash="287"><a href="http://vlsicad.ucsd.edu/Research/Advice/star_engineer.pdf" rel="nofollow" _istranslated="1">如何成为明星工程师</a>，作者：R.E. Kelley</li>
+<li><font _mstmutation="1" _msttexthash="76276304" _msthash="288"><a href="http://web.mit.edu/2.75/resources/random/How%20Complex%20Systems%20Fail.pdf" rel="nofollow" _mstmutation="1" _istranslated="1">复杂系统如何失败</a>，作者 R.I. Cook （<em _mstmutation="1" _istranslated="1">Rev.D</em></font>)</li>
+<li _msttexthash="100767186" _msthash="289"><a href="http://www.physlink.com/Education/grad_how2.cfm" rel="nofollow" _istranslated="1">如何成为一名优秀的研究生</a>，作者：M. desJardins</li>
+<li><font _mstmutation="1" _msttexthash="138792901" _msthash="290"><a href="https://mitpress.mit.edu/books/art-insight-science-and-engineering" rel="nofollow" _mstmutation="1" _istranslated="1">科学与工程的洞察力</a>艺术，S. Mahajan 著（2014 年）</font><code>MITPress</code><sub><sup _msttexthash="29303118" _msthash="291">国际标准书号： 9780262526548</sup></sub></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><a name="user-content-MechEng-Map"></a><font _mstmutation="1" _msttexthash="29862196" _msthash="292">机械工程知识地图</font></h4><a id="user-content-mechanical-engineering-knowledge-maps" class="anchor" aria-label="永久链接： 机械工程 Knowledge Maps" href="#mechanical-engineering-knowledge-maps" _mstaria-label="1660919" _msthash="293"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li _msttexthash="104326365" _msthash="294"><a href="http://www.engineer-assist.com/KnowledgeMap/MechEng_KnowledgeMap_4_files/png_1.htm" rel="nofollow" _istranslated="1">机械工程设计</a>，带有可选链接的知识图</li>
+<li _msttexthash="120277391" _msthash="295"><a href="http://www.engineer-assist.com/KnowledgeMap/MechEng_KnowledgeMap_4_files/png_2.htm" rel="nofollow" _istranslated="1">飞机与导弹设计</a>，带有可选链接的知识地图</li>
+<li _msttexthash="147962178" _msthash="296"><a href="http://www.engineer-assist.com/KnowledgeMap/MechEng_KnowledgeMap_4_files/png_3.htm" rel="nofollow" _istranslated="1">STRUCTURAL DYNAMICS</a>， 带有可选链接的知识地图</li>
+<li _msttexthash="97395805" _msthash="297"><a href="http://www.engineer-assist.com/KnowledgeMap/MechEng_KnowledgeMap_4_files/png_4.htm" rel="nofollow" _istranslated="1">振动与疲劳</a>，带有可选链接的知识地图</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><a name="user-content-database"></a><font _mstmutation="1" _msttexthash="7842991" _msthash="298">数据库</font></h4><a id="user-content-databases" class="anchor" aria-label="永久链接：数据库" href="#databases" _mstaria-label="396071" _msthash="299"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li _msttexthash="50008140" _msthash="300"><a href="http://www.matweb.com/" rel="nofollow" _istranslated="1">MatWeb</a>，材料属性数据库</li>
+<li _msttexthash="53165918" _msthash="301"><a href="https://www.matbase.com/" rel="nofollow" _istranslated="1">MatBase</a>，材料属性数据库</li>
+<li _msttexthash="137061509" _msthash="302"><a href="https://www.mcmaster.com/" rel="nofollow" _istranslated="1">McMaster-Carr</a>，提供 3D 模型和图纸的组件供应商</li>
+<li _msttexthash="54595099" _msthash="303"><a href="https://www.tracepartsonline.net/" rel="nofollow" _istranslated="1">Traceparts 在线</a>，CAD 零件库</li>
+<li _msttexthash="28713672" _msthash="304"><a href="https://www.3dcadbrowser.com/" rel="nofollow" _istranslated="1">3D Cad 浏览器</a>、3D 模型</li>
+<li _msttexthash="37216582" _msthash="305"><a href="https://grabcad.com/" rel="nofollow" _istranslated="1">GrabCAD</a>、模型库和教程</li>
+<li _msttexthash="155512487" _msthash="306"><a href="https://www.thingiverse.com/" rel="nofollow" _istranslated="1">Thingiverse，CAD</a> 零件，尤其是用于 3D 打印的零件</li>
+<li _msttexthash="39436735" _msthash="307"><a href="http://pdf.directindustry.com/" rel="nofollow" _istranslated="1">直接工业</a>，在线目录</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><a name="user-content-calculator"></a><font _mstmutation="1" _msttexthash="16863275" _msthash="308">在线计算器</font></h4><a id="user-content-online-calculators" class="anchor" aria-label="永久链接： 在线计算器" href="#online-calculators" _mstaria-label="725335" _msthash="309"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li _msttexthash="53459328" _msthash="310"><a href="https://www.desmos.com/calculator" rel="nofollow" _istranslated="1">Desmos</a>，在线图形计算器</li>
+<li _msttexthash="283234549" _msthash="311"><a href="https://engineeringpaper.xyz" rel="nofollow" _istranslated="1">EngineeringPaper.xyz</a>，具有单位支持、绘图和方程求解的工程计算器</li>
+<li _msttexthash="94521141" _msthash="312"><a href="https://www.fxsolver.com/" rel="nofollow" _istranslated="1">fxSolver</a>，工程和科学方程式求解器</li>
+<li _msttexthash="122234632" _msthash="313"><a href="https://mechanicalc.com/" rel="nofollow" _istranslated="1">MechaniCalc</a>，具有大量文档的机械计算器</li>
+<li><a href="https://www.wolframalpha.com/" rel="nofollow" _msttexthash="29278730" _msthash="314">沃尔夫拉姆阿尔法</a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><a name="user-content-tool"></a><font _mstmutation="1" _msttexthash="14411826" _msthash="315">工具和程序</font></h4><a id="user-content-tools-and-programs" class="anchor" aria-label="永久链接： 工具和程序" href="#tools-and-programs" _mstaria-label="683527" _msthash="316"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li _msttexthash="67166840" _msthash="317"><a href="http://blog.rectorsquid.com/linkage-mechanism-designer-and-simulator/" rel="nofollow" _istranslated="1">联动</a>，联动机构的快速原型制作</li>
+<li _msttexthash="56759989" _msthash="318"><a href="http://www.lyx.org/" rel="nofollow" _istranslated="1">LyX</a>，基于 LaTeX 的文档处理器</li>
+<li _msttexthash="71980077" _msthash="319"><a href="https://www.sumatrapdfreader.org/" rel="nofollow" _istranslated="1">SumatraPDF</a>，轻量级 PDF 阅读器</li>
+<li _msttexthash="77327458" _msthash="320"><a href="https://pandoc.org/" rel="nofollow" _istranslated="1">Pandoc</a>，一个通用的文档转换器</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><a name="user-content-useful"></a><font _mstmutation="1" _msttexthash="17803552" _msthash="321">有用的网站</font></h4><a id="user-content-useful-websites" class="anchor" aria-label="永久链接： 有用的网站" href="#useful-websites" _mstaria-label="596947" _msthash="322"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://www.asme.org/" rel="nofollow" _msttexthash="63547510" _msthash="323">美国机械工程师协会 （ASME）</a></li>
+<li _msttexthash="49083515" _msthash="324"><a href="http://www.efunda.com/home.cfm" rel="nofollow" _istranslated="1">eFunda</a>，工程基础知识</li>
+<li _msttexthash="42107728" _msthash="325">结构型材的 <a href="https://www.ryerson.com/stocklist" rel="nofollow" _istranslated="1">Ryerson 库存清单</a></li>
+<li _msttexthash="132709382" _msthash="326"><a href="http://www.howstuffworks.com/" rel="nofollow" _istranslated="1">How Stuff Works</a> 文章解释了日常事物的运作方式</li>
+<li><a href="https://scholar.google.com/citations?view_op=list_classic_articles&amp;hl=en&amp;by=2006" rel="nofollow" _msttexthash="33492771" _msthash="327">Google 学术经典论文</a></li>
+<li _msttexthash="52980629" _msthash="328"><a href="http://507movements.com/" rel="nofollow" _istranslated="1">507 机械机芯</a>， 动画机芯</li>
+<li _msttexthash="30841759" _msthash="329"><a href="http://www.animatedengines.com/" rel="nofollow" _istranslated="1">动画引擎</a>、动画引擎</li>
+<li><font _mstmutation="1" _msttexthash="131776814" _msthash="330"><a href="https://www.youtube.com/user/thang010146/videos" rel="nofollow" _mstmutation="1" _istranslated="1">thang010146</a>， 2100+ 动画机械 （可下载）</font><code>youtube</code></li>
+<li _msttexthash="51004759" _msthash="331"><a href="http://www.dmg-lib.org/dmglib/main/portal.jsp" rel="nofollow" _istranslated="1">DMG 库</a>、数字机构和齿轮库</li>
+<li><font _mstmutation="1" _msttexthash="59986290" _msthash="332"><a href="http://kmoddl.library.cornell.edu/e-books.php" rel="nofollow" _mstmutation="1" _istranslated="1">KMODDL</a>，机构和机器的集合</font><code>Cornell.edu</code></li>
+<li><a href="https://www.engineeringtoolbox.com/" rel="nofollow" _msttexthash="15488213" _msthash="333">工程工具箱</a></li>
+<li><a href="http://www.thermopedia.com/" rel="nofollow" _msttexthash="48316723" _msthash="334">Thermopedia （英文）</a></li>
+<li><a href="http://www.wlv.com/products/thermal-management-databooks.html" rel="nofollow" _msttexthash="15010775" _msthash="335">金刚狼工业</a></li>
+<li><a href="http://www.omega.com/techref/" rel="nofollow" _msttexthash="9087442" _msthash="336">Omega 工程</a></li>
+<li><a href="http://electricaltrainingalliance.org/Resources/Authentication" rel="nofollow" _msttexthash="12891294" _msthash="337">电气培训</a></li>
+<li><a href="http://ntrs.nasa.gov/search.jsp" rel="nofollow" _msttexthash="30386239" _msthash="338">NASA 技术报告服务器</a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="4006249" _msthash="339">专利</h4><a id="user-content-patents" class="anchor" aria-label="永久链接： 专利" href="#patents" _mstaria-label="339586" _msthash="340"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://www.google.com/patents/" rel="nofollow" _msttexthash="7281391" _msthash="341">Google 专利</a></li>
+<li><a href="https://worldwide.espacenet.com/" rel="nofollow" _msttexthash="13853294" _msthash="342">欧洲专利局</a></li>
+<li><a href="https://www.uspto.gov/" rel="nofollow" _msttexthash="21627489" _msthash="343">美国专利商标局</a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><a name="user-content-blog"></a><font _mstmutation="1" _msttexthash="14761747" _msthash="344">博客和论坛</font></h4><a id="user-content-blogs-and-forums" class="anchor" aria-label="永久链接： 博客和论坛" href="#blogs-and-forums" _mstaria-label="592800" _msthash="345"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://engineering.stackexchange.com/" rel="nofollow" _msttexthash="5692583" _msthash="346">工程 StackExchange</a></li>
+<li><a href="https://imechanica.org" rel="nofollow" _msttexthash="9786023" _msthash="347">iMechanica 公司</a></li>
+<li><a href="http://www.eng-tips.com/threadarea.cfm" rel="nofollow" _msttexthash="11730524" _msthash="348">Eng-Tips 论坛</a></li>
+<li><a href="https://www.physicsforums.com/forums/mechanical-engineering.101/" rel="nofollow" _msttexthash="12846587" _msthash="349">物理论坛</a></li>
+<li><a href="https://spectrum.ieee.org/" rel="nofollow" _msttexthash="11214697" _msthash="350">IEEE 频谱</a></li>
+<li _msttexthash="49733944" _msthash="351"><a href="http://scarbsf1.com/" rel="nofollow" _istranslated="1">ScarbsTech，F1</a> 的一切技术</li>
+<li><a href="http://insights.globalspec.com/" rel="nofollow" _msttexthash="12580412" _msthash="352">全球规格</a></li>
+<li><a href="https://hackaday.com/" rel="nofollow" _msttexthash="9191364" _msthash="353">黑客日</a></li>
+<li><a href="https://plasticsengineeringblog.com/" rel="nofollow" _msttexthash="18347056" _msthash="354">塑料工程博客</a></li>
+<li><a href="http://www.3dcadworld.com/" rel="nofollow" _msttexthash="8230898" _msthash="355">3D CAD 世界</a></li>
+<li _msttexthash="35281753" _msthash="356"><a href="https://www.engineersrule.com/" rel="nofollow" _istranslated="1">Engineers Rule，SolidWork</a> 博客</li>
+<li _msttexthash="57343793" _msthash="357"><a href="https://airshaper.com/blog/page/1" rel="nofollow" _istranslated="1">AirShaper</a>，空气动力学博客</li>
+</ul>
+<hr>
+<div align="right" dir="auto">
+<p dir="auto"><sup><a href="#toc" _msttexthash="15341105" _msthash="358">返回页首</a></sup> ^</p>
 </div>
-
-## <a name="math"></a>Mathematics
-### <a name="calculus"></a>Calculus and Linear Algebra
-* [Calculus](https://ocw.mit.edu/resources/res-18-001-calculus-online-textbook-spring-2005/textbook/), by [G. Strang](http://www-math.mit.edu/~gs/). [Direct download](http://ocw.mit.edu/ans7870/resources/Strang/Edited/Calculus/Calculus.pdf) `MIT.edu` 
-* [Online Mathematics Textbooks](http://people.math.gatech.edu/~cain/textbooks/onlinebooks.html), list of free books cured by [G. Cain](http://people.math.gatech.edu/%7Ecain/index.html)
-* [Essentials of Linear Algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab), by [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw) `youtube`
-* [Introduction to Tensor Analysis](http://ruina.mae.cornell.edu/Courses/ME6700/references/block_tensor_analysis.pdf), by H.D. Block. *Out of print* `Cornell.edu`
-* [The Matrix Cookbook](http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=3274), by K.B. Petersen, M.S. Pedersen (2012) `DTU.dk`
-* [Fundamentals of Linear Algebra and Optimization](http://www.cis.upenn.edu/~cis515/linalg.pdf), by [J. Gallier](http://www.cis.upenn.edu/~jean/home.html) and J. Quaintance (2017) `UPenn.edu`
-
-### <a name="numerical"></a>Numerical Analysis
-* [Numerical Analysis for Engineering](https://ece.uwaterloo.ca/~dwharder/NumericalAnalysis/), by D.W. Harder and R. Khoury `UWaterloo.ca`
-* [Numerical Recipes in C](http://www.nrbook.com/a/bookcpdf.html), by W.H. Press, B.P. Flannery, S.A. Teukolsky and W.T. Vetterly (1992) *Free for personal use*
-* [Numerical Methods for PDEs](https://www.youtube.com/channel/UCPVvF1gF2NMNWV-GQCCrpKQ/videos), by Qiqi Wang `MIT.edu` `youtube`
-* [Math, Numerics, & Programming (for Mechanical Engineers)](http://ocw.mit.edu/ans7870/2/2.086/F14/MIT2_086S13_Textbook.pdf), M. Yano, J.D. Penn, G. Konidaris and A.T Patera (2013) *Draft v2.1* `MIT.edu`
-* [Iterative Methods for Sparse Linear Systems](http://www-users.cs.umn.edu/~saad/IterMethBook_2ndEd.pdf), by Y. Saad (2003) `UMN.edu`
-* [Fundamental Numerical Methods and Data Analysis](http://ads.harvard.edu/books/1990fnmd.book/), by G.W. Collins (1990) `Harvard.edu`
-* [A Pragmatic Introduction to Signal Processing](https://terpconnect.umd.edu/~toh/spectrum/), by [T.C. O'Haver](https://terpconnect.umd.edu/%7Etoh/) (2018) `UMD.edu`
-
-## Programming
-* [Free programming books](https://github.com/vhf/free-programming-books) `github`
-* [Project Euler](https://projecteuler.net/), math/programming problems archives
-* [Programming Notes for Professionals](http://goalkicker.com/), books compiled from StackOverflow Documentation `goalkicker`
-* [Rosetta Code](http://rosettacode.org/wiki/Rosetta_Code), implementations of common algorithms in many programmming languages
-
-### <a name="cpp"></a>C++
-* [The Definitive C++ Book Guide and List](http://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list) `stackoverflow`
-* [EbookFoundation #C++](https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md#c-1) `github`
-
-### Python
-* [NumFOCUS: numfocus.com/sponsored-projects #python](https://numfocus.org/sponsored-projects)
-* [A Byte of Python](https://python.swaroopch.com/), by [C.H. Swaroop](https://www.swaroopch.com/about/) (2013)
- [[Free Copy](https://www.gitbook.com/download/pdf/book/swaroopch/byte-of-python)/[Hard Copy](https://www.swaroopch.com/buybook/)]
-* [Dive into Python 3](http://www.diveintopython3.net/index.html)
-* [Learn X in Y minutes, where X=Python](https://learnxinyminutes.com/docs/python/)
-* [Automate the Boring Stuff with Python](https://automatetheboringstuff.com), a great book for getting a handle on writing python scripts
-* [EbookFoundation #Python](https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md#python) `github`
-* [fast.ai: Book, Courses, Python library, nbdev](https://www.fast.ai/)
-* [GreenTeaPress: Think Python, Think Stats, Think Complexity, Modeling and Simulation in Python](https://greenteapress.com/wp/) - Free books as Jupyter notebooks on GitHub
-* [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook) - "introduces the core libraries essential for working with data in Python: particularly IPython, NumPy, Pandas, Matplotlib, Scikit-Learn, and related packages"
-* [kaggle.com/learn](https://kaggle.com/learn) - Python, Machine Learning, AI, Reinforcement Learning as Jupyter Notebooks (kaggle/docker-python)
-* [awesome-python-in-education#jupyter](https://github.com/quobit/awesome-python-in-education#jupyter)
-* [jupyter/jupyter/wiki: A Gallery of Interesting Jupyter Notebooks](https://github.com/jupyter/jupyter/wiki#a-gallery-of-interesting-jupyter-notebooks)
-* [conda-forge/miniforge#mambaforge](https://github.com/conda-forge/miniforge#mambaforge) - Install conda and mamba. `mamba install -y` defaults to ~= `conda install -c conda-forge -y`
-
-### Julia
-* [Learning Julia](https://julialang.org/learning/), official learning resources
-* [Learn X in Y minutes, where X=Julia](https://learnxinyminutes.com/docs/julia/)
-* [EbookFoundation #Julia](https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md#julia) `github`
-
-### <a name="excel"></a>Microsoft Excel VBA
-* [VBA Notes for Professinals](http://goalkicker.com/VBABook/) `goalkicker`
-
-### MATLAB
-* [Awesome MATLAB List](https://github.com/mikecroucher/awesome-MATLAB), by [@mikecroucher](https://github.com/mikecroucher/) `github`
-* [Learn X in Y minutes, where X=MATLAB](https://learnxinyminutes.com/docs/matlab/)
-* [MATLAB Toolbox tutorials](http://www.tech.plym.ac.uk/spmc/links/matlab/matlab_toolbox.html)
-* [Control Tutorials for MATLAB and Simulink](http://ctms.engin.umich.edu/CTMS/index.php?aux=Home)
-* [A Brief Introduction to Engineering Computation with MATLAB](https://open.bccampus.ca/find-open-textbooks/?uuid=e12e3911-8a06-497e-b8c9-99e347092af0&contributor=&keyword=&subject=) `BCcampus.ca`
-* [Stuart’s MATLAB Videos](https://blogs.mathworks.com/videos/) (Blog) `MathWorks.com`
-* [EbookFoundation #MATLAB](https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md#matlab) `github`
-
-### <a name="r"></a>R (statistics)
-* [Intro to R for data science](https://www.edx.org/course/introduction-r-data-science-microsoft-dat204x-0) `edX Microsoft`
-* [EbookFoundation #R](https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md#r) `github`
-
-### Fortran
-* [Introduction to Programming with Fortran 95](https://www.fortrantutorial.com/documents/IntroductionToFTN95.pdf)
-* [EbookFoundation #Fortran](https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md#fortran) `github`
-
-### LaTeX
-* [WikiBooks: LaTeX](https://en.wikibooks.org/wiki/LaTeX) ([PDF](https://upload.wikimedia.org/wikipedia/commons/2/2d/LaTeX.pdf)) `wikibooks`
-* [LaTeX Notes for Professionals](http://books.goalkicker.com/LaTeXBook/) `goalkicker`
-* [Learn LaTeX in 30 min](https://www.sharelatex.com/learn/Learn_LaTeX_in_30_minutes) `sharelatex`
-* [EbookFoundation #LaTeX](https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md#latex) `github`
-
----
-<div align="right">
-
-<sup>[Back to Top](#toc)</sup> &Hat;
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a name="user-content-math"></a><font _mstmutation="1" _msttexthash="4796480" _msthash="359">数学</font></h2><a id="user-content-mathematics" class="anchor" aria-label="永久链接： 数学" href="#mathematics" _mstaria-label="474006" _msthash="360"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><a name="user-content-calculus"></a><font _mstmutation="1" _msttexthash="27364792" _msthash="361">微积分和线性代数</font></h3><a id="user-content-calculus-and-linear-algebra" class="anchor" aria-label="永久链接：微积分和线性代数" href="#calculus-and-linear-algebra" _mstaria-label="1045538" _msthash="362"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font _mstmutation="1" _msttexthash="61170226" _msthash="363"><a href="https://ocw.mit.edu/resources/res-18-001-calculus-online-textbook-spring-2005/textbook/" rel="nofollow" _mstmutation="1" _istranslated="1">微积分</a>，<a href="http://www-math.mit.edu/~gs/" rel="nofollow" _mstmutation="1" _istranslated="1">G. Strang</a> 著。<a href="http://ocw.mit.edu/ans7870/resources/Strang/Edited/Calculus/Calculus.pdf" rel="nofollow" _mstmutation="1" _istranslated="1">直接下载</a></font> <code>MIT.edu</code></li>
+<li _msttexthash="122710419" _msthash="364"><a href="http://people.math.gatech.edu/~cain/textbooks/onlinebooks.html" rel="nofollow" _istranslated="1">在线数学教科书</a>，<a href="http://people.math.gatech.edu/%7Ecain/index.html" rel="nofollow" _istranslated="1">由 G. Cain</a> 治愈的免费书籍清单</li>
+<li><font _mstmutation="1" _msttexthash="55788577" _msthash="365"><a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab" rel="nofollow" _mstmutation="1" _istranslated="1">线性代数要点</a>，作者：<a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw" rel="nofollow" _mstmutation="1" _istranslated="1">3Blue1Brown</a></font> <code>youtube</code></li>
+<li><font _mstmutation="1" _msttexthash="65286325" _msthash="366"><a href="http://ruina.mae.cornell.edu/Courses/ME6700/references/block_tensor_analysis.pdf" rel="nofollow" _mstmutation="1" _istranslated="1">张量分析简介</a>，H.D. Block 著。<em _mstmutation="1" _istranslated="1">绝版</em></font> <code>Cornell.edu</code></li>
+<li><font _mstmutation="1" _msttexthash="138300916" _msthash="367"><a href="http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=3274" rel="nofollow" _mstmutation="1" _istranslated="1">矩阵食谱</a>，作者：K.B. Petersen、M.S. Pedersen（2012 年）</font><code>DTU.dk</code></li>
+<li><font _mstmutation="1" _msttexthash="173310488" _msthash="368"><a href="http://www.cis.upenn.edu/~cis515/linalg.pdf" rel="nofollow" _mstmutation="1" _istranslated="1">线性代数和优化</a>基础，<a href="http://www.cis.upenn.edu/~jean/home.html" rel="nofollow" _mstmutation="1" _istranslated="1">作者：J. Gallier</a> 和 J. Quaintance（2017 年）</font><code>UPenn.edu</code></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><a name="user-content-numerical"></a><font _mstmutation="1" _msttexthash="10402574" _msthash="369">数值分析</font></h3><a id="user-content-numerical-analysis" class="anchor" aria-label="永久链接： 数值分析" href="#numerical-analysis" _mstaria-label="723775" _msthash="370"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font _mstmutation="1" _msttexthash="61150414" _msthash="371"><a href="https://ece.uwaterloo.ca/~dwharder/NumericalAnalysis/" rel="nofollow" _mstmutation="1" _istranslated="1">工程数值分析</a>，作者：D.W. Harder 和 R. Khoury</font><code>UWaterloo.ca</code></li>
+<li _msttexthash="390643695" _msthash="372"><a href="http://www.nrbook.com/a/bookcpdf.html" rel="nofollow" _istranslated="1">C语言中的数值食谱</a>，W.H. Press、B.P. Flannery、S.A. Teukolsky 和 W.T. Vetterly 著 （1992） <em _istranslated="1">免费供个人使用</em></li>
+<li><font _mstmutation="1" _msttexthash="82974905" _msthash="373"><a href="https://www.youtube.com/channel/UCPVvF1gF2NMNWV-GQCCrpKQ/videos" rel="nofollow" _mstmutation="1" _istranslated="1">偏微分方程的数值方法</a>，作者：Qiqi Wang</font><code>MIT.edu</code> <code>youtube</code></li>
+<li><font _mstmutation="1" _msttexthash="353315287" _msthash="374"><a href="http://ocw.mit.edu/ans7870/2/2.086/F14/MIT2_086S13_Textbook.pdf" rel="nofollow" _mstmutation="1" _istranslated="1">数学、数字和编程（机械工程师用）</a>，M. Yano， J.D. Penn， G. Konidaris 和 A.T Patera （2013） <em _mstmutation="1" _istranslated="1">草案 v2.1</em></font> <code>MIT.edu</code></li>
+<li><font _mstmutation="1" _msttexthash="148617690" _msthash="375"><a href="http://www-users.cs.umn.edu/~saad/IterMethBook_2ndEd.pdf" rel="nofollow" _mstmutation="1" _istranslated="1">稀疏线性系统的迭代方法</a>，作者：Y. Saad （2003）</font><code>UMN.edu</code></li>
+<li><font _mstmutation="1" _msttexthash="531793600" _msthash="376"><a href="http://ads.harvard.edu/books/1990fnmd.book/" rel="nofollow" _mstmutation="1" _istranslated="1">Fundamental Numerical Methods and Data Analysis（基本数值方法和数据分析</a>），G.W. Collins 著（1990 年）</font><code>Harvard.edu</code></li>
+<li><font _mstmutation="1" _msttexthash="543104705" _msthash="377"><a href="https://terpconnect.umd.edu/~toh/spectrum/" rel="nofollow" _mstmutation="1" _istranslated="1">A Pragmatic Introduction to Signal Processing（信号处理的实用介绍</a>），作者：<a href="https://terpconnect.umd.edu/%7Etoh/" rel="nofollow" _mstmutation="1" _istranslated="1">T.C. O'Haver</a>（2018 年）</font><code>UMD.edu</code></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="6209866" _msthash="378">编程</h2><a id="user-content-programming" class="anchor" aria-label="永久链接： 编程" href="#programming" _mstaria-label="478179" _msthash="379"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://github.com/vhf/free-programming-books" _msttexthash="21356049" _msthash="380">免费编程书籍</a> <code>github</code></li>
+<li _msttexthash="93732509" _msthash="381"><a href="https://projecteuler.net/" rel="nofollow" _istranslated="1">Project Euler</a>，数学/编程问题档案</li>
+<li><font _mstmutation="1" _msttexthash="196072474" _msthash="382"><a href="http://goalkicker.com/" rel="nofollow" _mstmutation="1" _istranslated="1">Programming Notes for Professionals</a>，从 StackOverflow 文档编译的书籍</font><code>goalkicker</code></li>
+<li _msttexthash="150576335" _msthash="383"><a href="http://rosettacode.org/wiki/Rosetta_Code" rel="nofollow" _istranslated="1">Rosetta Code</a>，许多编程语言中常用算法的实现</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><a name="user-content-cpp"></a><font _mstmutation="1" _msttexthash="15600" _msthash="384">C++</font></h3><a id="user-content-c" class="anchor" aria-label="永久链接： C++" href="#c" _mstaria-label="182195" _msthash="385"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="http://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list" rel="nofollow" _msttexthash="45263647" _msthash="386">权威的 C++ 书籍指南和列表</a> <code>stackoverflow</code></li>
+<li><a href="https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md#c-1" _msttexthash="18970094" _msthash="387">电子书基金会 #C++</a> <code>github</code></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="3164070" _msthash="388">蟒</h3><a id="user-content-python" class="anchor" aria-label="永久链接：Python" href="#python" _mstaria-label="310154" _msthash="389"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://numfocus.org/sponsored-projects" rel="nofollow" _msttexthash="14581333" _msthash="390">NumFOCUS：numfocus.com/sponsored-projects #python</a></li>
+<li><font _mstmutation="1" _msttexthash="230624628" _msthash="391"><a href="https://python.swaroopch.com/" rel="nofollow" _mstmutation="1" _istranslated="1">A Byte of Python</a>，作者：<a href="https://www.swaroopch.com/about/" rel="nofollow" _mstmutation="1" _istranslated="1">C.H. Swaroop</a> （2013）
+[<a href="https://www.gitbook.com/download/pdf/book/swaroopch/byte-of-python" rel="nofollow" _mstmutation="1" _istranslated="1">免费复印</a>/<a href="https://www.swaroopch.com/buybook/" rel="nofollow" _mstmutation="1" _istranslated="1">硬拷贝</a></font>]</li>
+<li><a href="http://www.diveintopython3.net/index.html" rel="nofollow" _msttexthash="11793691" _msthash="392">深入了解 Python 3</a></li>
+<li><a href="https://learnxinyminutes.com/docs/python/" rel="nofollow" _msttexthash="41200302" _msthash="393">在 Y 分钟内学习 X，其中 X=Python</a></li>
+<li _msttexthash="205248043" _msthash="394"><a href="https://automatetheboringstuff.com" rel="nofollow" _istranslated="1">Automate the Boring Stuff with Python</a>，一本关于编写 Python 脚本的好书</li>
+<li><a href="https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md#python" _msttexthash="509353" _msthash="395">EbookFoundation #Python</a> <code>github</code></li>
+<li><a href="https://www.fast.ai/" rel="nofollow" _msttexthash="102687845" _msthash="396">fast.ai： 书籍， 课程， Python 库， nbdev</a></li>
+<li _msttexthash="343157698" _msthash="397"><a href="https://greenteapress.com/wp/" rel="nofollow" _istranslated="1">GreenTeaPress：Think Python， Think Stats， Think Complexity， Modeling and Simulation in Python</a> - GitHub 上的免费书籍 Jupyter notebooks</li>
+<li _msttexthash="447431920" _msthash="398"><a href="https://github.com/jakevdp/PythonDataScienceHandbook" _istranslated="1">Python 数据科学手册</a> - “介绍在 Python 中处理数据所必需的核心库：特别是 IPython、NumPy、Pandas、Matplotlib、Scikit-Learn 和相关包”</li>
+<li _msttexthash="248068054" _msthash="399"><a href="https://kaggle.com/learn" rel="nofollow" _istranslated="1">kaggle.com/learn</a> - Python、机器学习、AI、强化学习作为 Jupyter Notebook （kaggle/docker-python）</li>
+<li><a href="https://github.com/quobit/awesome-python-in-education#jupyter" _msttexthash="1113762" _msthash="400">awesome-python-in-education#jupyter</a></li>
+<li><a href="https://github.com/jupyter/jupyter/wiki#a-gallery-of-interesting-jupyter-notebooks" _msttexthash="73736533" _msthash="401">jupyter/jupyter/wiki：有趣的 Jupyter Notebook 库</a></li>
+<li><font _mstmutation="1" _msttexthash="122947968" _msthash="402"><a href="https://github.com/conda-forge/miniforge#mambaforge" _mstmutation="1" _istranslated="1">conda-forge/miniforge#mambaforge</a> - 安装 conda 和 mamba。 默认为 ~=</font><code>mamba install -y</code><code>conda install -c conda-forge -y</code></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="8602204" _msthash="403">朱莉娅</h3><a id="user-content-julia" class="anchor" aria-label="永久链接： Julia" href="#julia" _mstaria-label="270894" _msthash="404"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li _msttexthash="52317473" _msthash="405"><a href="https://julialang.org/learning/" rel="nofollow" _istranslated="1">学习 Julia</a>，官方学习资源</li>
+<li><a href="https://learnxinyminutes.com/docs/julia/" rel="nofollow" _msttexthash="41155543" _msthash="406">在 Y 分钟内学习 X，其中 X=Julia</a></li>
+<li><a href="https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md#julia" _msttexthash="459095" _msthash="407">EbookFoundation #Julia</a> <code>github</code></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><a name="user-content-excel"></a><font _mstmutation="1" _msttexthash="316940" _msthash="408">Microsoft Excel VBA</font></h3><a id="user-content-microsoft-excel-vba" class="anchor" aria-label="永久链接：Microsoft Excel VBA" href="#microsoft-excel-vba" _mstaria-label="679965" _msthash="409"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="http://goalkicker.com/VBABook/" rel="nofollow" _msttexthash="20864246" _msthash="410">专业人士 VBA 说明</a> <code>goalkicker</code></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="53066" _msthash="411">MATLAB</h3><a id="user-content-matlab" class="anchor" aria-label="永久链接： MATLAB" href="#matlab" _mstaria-label="256061" _msthash="412"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font _mstmutation="1" _msttexthash="54539953" _msthash="413"><a href="https://github.com/mikecroucher/awesome-MATLAB" _mstmutation="1" _istranslated="1">Awesome MATLAB List</a>，由 <a href="https://github.com/mikecroucher/" _mstmutation="1" _istranslated="1">@mikecroucher</a> 提供</font> <code>github</code></li>
+<li><a href="https://learnxinyminutes.com/docs/matlab/" rel="nofollow" _msttexthash="41138058" _msthash="414">在 Y 分钟内学习 X，其中 X=MATLAB</a></li>
+<li><a href="http://www.tech.plym.ac.uk/spmc/links/matlab/matlab_toolbox.html" rel="nofollow" _msttexthash="15483884" _msthash="415">MATLAB Toolbox 教程</a></li>
+<li><a href="http://ctms.engin.umich.edu/CTMS/index.php?aux=Home" rel="nofollow" _msttexthash="45767670" _msthash="416">MATLAB 和 Simulink 的控制教程</a></li>
+<li><a href="https://open.bccampus.ca/find-open-textbooks/?uuid=e12e3911-8a06-497e-b8c9-99e347092af0&amp;contributor=&amp;keyword=&amp;subject=" rel="nofollow" _msttexthash="63552502" _msthash="417">使用 MATLAB 进行工程计算简介</a> <code>BCcampus.ca</code></li>
+<li><font _mstmutation="1" _msttexthash="78723255" _msthash="418"><a href="https://blogs.mathworks.com/videos/" rel="nofollow" _mstmutation="1" _istranslated="1">Stuart 的 MATLAB 视频</a>（博客）</font><code>MathWorks.com</code></li>
+<li><a href="https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md#matlab" _msttexthash="438958" _msthash="419">EbookFoundation #MATLAB</a> <code>github</code></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><a name="user-content-r"></a><font _mstmutation="1" _msttexthash="30767152" _msthash="420">R（统计量）</font></h3><a id="user-content-r-statistics" class="anchor" aria-label="永久链接：R（统计）" href="#r-statistics" _mstaria-label="524940" _msthash="421"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://www.edx.org/course/introduction-r-data-science-microsoft-dat204x-0" rel="nofollow" _msttexthash="34780603" _msthash="422">用于数据科学的 R 简介</a> <code>edX Microsoft</code></li>
+<li><a href="https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md#r" _msttexthash="320346" _msthash="423">EbookFoundation #R</a> <code>github</code></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="96356" _msthash="424">Fortran</h3><a id="user-content-fortran" class="anchor" aria-label="永久链接：Fortran" href="#fortran" _mstaria-label="338221" _msthash="425"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://www.fortrantutorial.com/documents/IntroductionToFTN95.pdf" rel="nofollow" _msttexthash="54407392" _msthash="426">使用 Fortran 95 进行编程简介</a></li>
+<li><a href="https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md#fortran" _msttexthash="19103539" _msthash="427">电子书基金会 #Fortran</a> <code>github</code></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="5261009" _msthash="428">乳胶</h3><a id="user-content-latex" class="anchor" aria-label="永久链接： LaTeX" href="#latex" _mstaria-label="257231" _msthash="429"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font _mstmutation="1" _msttexthash="40868425" _msthash="430"><a href="https://en.wikibooks.org/wiki/LaTeX" rel="nofollow" _mstmutation="1" _istranslated="1">维基教科书： LaTeX</a> （<a href="https://upload.wikimedia.org/wikipedia/commons/2/2d/LaTeX.pdf" rel="nofollow" _mstmutation="1" _istranslated="1">PDF</a></font>) <code>wikibooks</code></li>
+<li><a href="http://books.goalkicker.com/LaTeXBook/" rel="nofollow" _msttexthash="22499204" _msthash="431">面向专业人士的 LaTeX Notes</a> <code>goalkicker</code></li>
+<li><a href="https://www.sharelatex.com/learn/Learn_LaTeX_in_30_minutes" rel="nofollow" _msttexthash="21172177" _msthash="432">在 30 分钟内学习 LaTeX</a> <code>sharelatex</code></li>
+<li><a href="https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md#latex" _msttexthash="441142" _msthash="433">EbookFoundation #LaTeX</a> <code>github</code></li>
+</ul>
+<hr>
+<div align="right" dir="auto">
+<p dir="auto"><sup><a href="#toc" _msttexthash="15341105" _msthash="434">返回页首</a></sup> ^</p>
 </div>
-
-## Mechanics
-### <a name="continuum"></a>Continuum Mechanics
-* [Introduction to the Mechanics of a Continuous Medium](https://archive.org/details/in.ernet.dli.2015.140589), by L.E. Malvern (1969) *Out of Copyright* `Archive.org`
-* Many lecture notes links available from [iMechanica](http://imechanica.org/node/1551) (2007)
-* [Applied Mechanics of Solids](http://solidmechanics.org/contents.php), by [A.F. Bower](https://vivo.brown.edu/display/albower) (2012) [[Amazon](https://www.amazon.com/Applied-Mechanics-Solids-Allan-Bower/dp/1439802475/)]
-&emsp; <sub><sup>ISBN: 978-1439802472</sup></sub>
-* [Continuum Mechanics](http://www.continuummechanics.org/index.html), by B. McGinty (2012)
-* [Introduction to Continuum Mechanics for Engineers](http://oaktrust.library.tamu.edu/bitstream/handle/1969.1/2501/IntroductionToContinuumMechanicsRevisedEdition.pdf?sequence=6&isAllowed=y), by R.M. Bowen (1989) `Tamu.edu`
-
-#### Theory of Plates and Shells
-* [Theory of Plates and Shells](https://archive.org/details/TheoryOfPlatesAndShells) by S. Timoshenko and S. Woinowsky-Krieger (1959) `Archive.org`
-&emsp; <sub><sup>ISBN: 978-0070647794</sup></sub>
-
-### <a name="statics&dynamics"></a>Statics and Dynamics
-* [Introduction to Statics and Dynamics](http://ruina.tam.cornell.edu/Book/) `Cornell.edu`
-* [Bolted Joint Analysis](https://www.mechanicalc.com/reference/bolted-joint-analysis)
-* [Lug Analysis](https://www.mechanicalc.com/reference/lug-analysis)
-
-### <a name="strength"></a>Strength of Materials
-* [Mechanical Metallurgy](https://archive.org/details/mechanicalmetall00diet), by G.E. Dieter (1961) `Archive.org`
-* [Applied Strength of Materials for Engineering Technology](http://www.etcs.ipfw.edu/~dupenb/ET_200/Applied%20Str%20of%20Mat%20for%20ET%20v12%20Jun%202017.pdf), by [B. Dupen](http://www.etcs.ipfw.edu/~dupenb/) (2017) `IPFW.edu`
-* [Mechanics of Materials](https://www.amazon.com/Mechanics-Materials-James-M-Gere/dp/1111577730/ref=sr_1_1), by J.M. Gere and B.J. Goodno (2012) `Amazon`
-&emsp; <sub><sup>ISBN: 978-1111577735</sup></sub>
-* [Mechanical Behavior of Materials](https://www.amazon.com/Mechanical-Behavior-Materials-Norman-Dowling/dp/0131395068/ref=sr_1_1), by N.E. Dowling (2012) `Amazon`
-&emsp; <sub><sup>ISBN: 978-0131395060</sup></sub>
-* [Roark's Formulas for Stress and Strain](https://www.amazon.com/Roarks-Formulas-Stress-Strain-Warren-ebook/dp/B00938YD4Y/ref=sr_1_1), by W.C. Young and R.G. Budynas (2001) `Amazon`
-&emsp; <sub><sup>ISBN: 978-0070725423</sup></sub>
-* [Strength of Materials](https://www.mechanicalc.com/reference/strength-of-materials)
-* [Beam Stress and Deflection](https://www.mechanicalc.com/reference/beam-analysis)
-* [Column Buckling](https://www.mechanicalc.com/reference/column-buckling)
-* [The Engineering of Structures Around Us](https://www.edx.org/course/engineering-structures-around-us-dartmouthx-dart-engs-02-x) `edX Dartmouth`
-* [Elements of Structures](https://www.edx.org/course/elements-structures-mitx-2-01x-1) `edX MIT`
-* [Mechanical Properties of Materials](https://www.mechanicalc.com/reference/material-properties)
-* [Mechanics of Materials](http://madhuvable.org/books-2/introduction/), by [M. Vable](http://pages.mtu.edu/~mavable/) (2009) `MTU.edu` 
-* [Mechanical Properties of Materials](http://web.mit.edu/course/3/3.225/), by [D. Roylance](http://web.mit.edu/roylance/www/home.html) (2008) [[Direct](http://web.mit.edu/course/3/3.225/book.pdf)] `MIT.edu`
-
-### Plasticity
-* [The Mathematical Theory of Plasticity](https://archive.org/details/in.ernet.dli.2015.84513), by R. Hill (1950) `Archive.org`
-* [Computational Methods for Plasticity](https://www.amazon.com/Computational-Methods-Plasticity-Theory-Applications/dp/0470694521/), by E.A. de Souza Neto, D. Peric & D.R.J. Owen  `Amazon`
-&emsp; <sub><sup>ISBN: 978-0470694527</sup></sub>
-
-## <a name="machine"></a>Theory of Machines
-### Mechanism Design
-* [Shigley's Mechanical Engineering Design](https://www.amazon.com/Shigleys-Mechanical-Engineering-Design-McGraw-Hill-ebook/dp/B00HZ3B1KI/ref=sr_1_2), by R.G.Budynas and J.K. Nisbett (2014) `Amazon`
-&emsp; <sub><sup>ISBN: 978-0073398204</sup></sub>
-* [Introduction to Mechanisms](https://www.cs.cmu.edu/%7Erapidproto/mechanisms/tablecontents.html),  by Yi Zhang with S. Finger, S. Behrens. `CMU.edu`
-* [Mechanisms/Machines](https://archive.org/details/MechanismsMachines), by L. Teel (1972) `Archive.org`
-* [U of Minessota](https://www.youtube.com/playlist?list=PLNWWAQ4wioJxZ3_UBEWIbOq7hiA0dnJ8J) 'YouTube'
-* [NPTEL IIT Kgp Mechanisms and Robot Kinematics] (https://onlinecourses.nptel.ac.in/noc18_me18) 'NPTEL'
-* [MIT Fundamentals of Design](http://pergatory.mit.edu/resources/fundamentals.html) 'MIT'
-* [NPTEL- Kinematics of Machines](http://nptel.ac.in/courses/112104121/1#) 'Courseware'
-* [Middle East TU Mechanisms](http://ocw.metu.edu.tr/mod/resource/view.php?id=2094) 'Courseware'
-* [Kinematic Models for Design Digital Library (KMODDL) by Cornell U](http://kmoddl.library.cornell.edu/)
-* [Mechanism Design: v. 1: Analysis and Synthesis](https://www.amazon.in/1-Mechanism-Design-Analysis-Synthesis/dp/0130408727/) by Arthur G. Erdman, George N. Sandor, Sridhar Kota `Amazon`&emsp; <sub><sup>ISBN: 978-0130408723</sup></sub>
-* [Mechanism Design: v. 2: Analysis and Synthesis](https://www.amazon.in/1-Mechanism-Design-Analysis-Synthesis/dp/0130408727/) by Arthur G. Erdman, George N. Sandor, Sridhar Kota `Amazon`&emsp; <sub><sup>ISBN:  978-0130408723</sup></sub>
-* [Design of Machinery](http://amzn.to/2FTZQbu) by Robert L Norton `Amazon`&emsp; <sub><sup>ISBN: 978-0071236713</sup></sub>
-* [Mechanisms and Mechanical Devices Sourcebook](https://www.amazon.in/Mechanisms-Mechanical-Sourcebook-Nicholas-Chironis/dp/0070113564) by by Nicholas Paul Chironis, Neil Sclater `Amazon`&emsp; <sub><sup>ISBN: 978-0070113565</sup></sub>
-* 
-
-### Control Engineering
-* [Modern Control Engineering](https://www.amazon.com/Modern-Control-Engineering-Katsuhiko-Ogata/dp/0136156738/ref=sr_1_cc_4), by K. Ogata (2009) `Amazon`
-&emsp; <sub><sup>ISBN: 978-0136156734</sup></sub>
-* [Automatic Control Systems](https://www.amazon.com/Automatic-Control-Systems-Tenth-Golnaraghi/dp/1259643832/ref=sr_1_1), by F. Golnaraghi and B.C. Kuo (2017) `Amazon`
-&emsp; <sub><sup>ISBN: 978-1259643835</sup></sub>
-* [Control Systems Engineering](https://www.amazon.com/Control-Systems-Engineering-Norman-Nise/dp/1118170512/ref=sr_1_1), by N.S. Nise (2015) `Amazon`
-&emsp; <sub><sup>ISBN: 978-1118170519</sup></sub>
-* [Linear Robust Control](https://www.amazon.com/Linear-Control-Prentice-Information-Sciences/dp/0131022784/ref=sr_1_), by M. Green and D.J.N. Limebeer (1994) `Amazon`
-&emsp; <sub><sup>ISBN: 978-0131022782</sup></sub>
-* [Essentials of Robust Control](https://www.amazon.com/Essentials-Robust-Control-Kemin-Zhou/dp/0135258332/ref=sr_1_1), by K. Zhou with J.C. Doyle (1997) `Amazon`
-&emsp; <sub><sup>ISBN: 978-0135258330</sup></sub>
-* [Feedback Control Theory](https://www.amazon.com/Feedback-Control-Theory-Electrical-Engineering/dp/0486469336/ref=sr_1_1), by J.C. Doyle, B.A. Francis and A.R. Tannenbaum (2009) `Amazon`
-&emsp; <sub><sup>ISBN: 978-0486469331</sup></sub>
-* [Feedback Systems](http://www.cds.caltech.edu/~murray/books/AM08/pdf/am08-complete_30Aug11.pdf) by K.J. Åström and R. Murray (2011) `CalTech.edu`
-* [Classical Control Theory](https://www.youtube.com/playlist?list=PLUMWjy5jgHK1NC52DXXrriwihVrYZKqjk), by Brian Douglas `youtube`
-* [Control Systems](https://en.wikibooks.org/wiki/Control_Systems) `wikibooks`
-* [System Design for Uncertainty](https://ocw.mit.edu/courses/mechanical-engineering/2-017j-design-of-electromechanical-robotic-systems-fall-2009/course-text/MIT2_017JF09_coursetext.pdf), by F.S. Hover & M.S. Triantafyllou (2009) `MIT.edu`
-
-### Robotics
-* [Awesome Robotics List](https://github.com/Kiloreux/awesome-robotics), by [@Kiloreux](https://github.com/kiloreux) `github`
-* [A Mathematical Introduction to Robotic Manipulation](http://www.cds.caltech.edu/~murray/mlswiki/?title=First_edition) `Caltech.edu`
-
----
-<div align="right">
-
-<sup>[Back to Top](#toc)</sup> &Hat;
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="4357769" _msthash="435">力学</h2><a id="user-content-mechanics" class="anchor" aria-label="永久链接： 机制" href="#mechanics" _mstaria-label="396448" _msthash="436"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><a name="user-content-continuum"></a><font _mstmutation="1" _msttexthash="378040" _msthash="437">Continuum Mechanics</font></h3><a id="user-content-continuum-mechanics" class="anchor" aria-label="永久链接：Continuum Mechanics" href="#continuum-mechanics" _mstaria-label="767715" _msthash="438"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font _mstmutation="1" _msttexthash="737492834" _msthash="439"><a href="https://archive.org/details/in.ernet.dli.2015.140589" rel="nofollow" _mstmutation="1" _istranslated="1">Introduction to the Mechanics of a Continuous Medium（连续介质的力学导论</a>），作者：L.E. Malvern （1969） <em _mstmutation="1" _istranslated="1">版权已结束</em></font> <code>Archive.org</code></li>
+<li _msttexthash="99928062" _msthash="440">许多讲义链接可从 <a href="http://imechanica.org/node/1551" rel="nofollow" _istranslated="1">iMechanica</a> （2007） 获得</li>
+<li><font _mstmutation="1" _msttexthash="313175772" _msthash="441"><a href="http://solidmechanics.org/contents.php" rel="nofollow" _mstmutation="1" _istranslated="1">Applied Mechanics of Solids（固体应用力学</a>），作者：<a href="https://vivo.brown.edu/display/albower" rel="nofollow" _mstmutation="1" _istranslated="1">A.F. Bower</a> （2012） [<a href="https://www.amazon.com/Applied-Mechanics-Solids-Allan-Bower/dp/1439802475/" rel="nofollow" _mstmutation="1" _istranslated="1">Amazon</a>]</font><sub><sup _msttexthash="11859367" _msthash="442">书号： 978-1439802472</sup></sub></li>
+<li _msttexthash="116524824" _msthash="443"><a href="http://www.continuummechanics.org/index.html" rel="nofollow" _istranslated="1">Continuum Mechanics，B</a>. McGinty 著（2012 年）</li>
+<li><font _mstmutation="1" _msttexthash="149279507" _msthash="444">工程师<a href="http://oaktrust.library.tamu.edu/bitstream/handle/1969.1/2501/IntroductionToContinuumMechanicsRevisedEdition.pdf?sequence=6&amp;isAllowed=y" rel="nofollow" _mstmutation="1" _istranslated="1">的连续体力学简介</a>，作者：R.M. Bowen （1989）</font><code>Tamu.edu</code></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="12904463" _msthash="445">板壳理论</h4><a id="user-content-theory-of-plates-and-shells" class="anchor" aria-label="永久链接：板壳理论" href="#theory-of-plates-and-shells" _mstaria-label="1018485" _msthash="446"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font _mstmutation="1" _msttexthash="162832423" _msthash="447">S. Timoshenko 和 S. Woinowsky-Krieger 的<a href="https://archive.org/details/TheoryOfPlatesAndShells" rel="nofollow" _mstmutation="1" _istranslated="1">板壳理论</a> （1959）</font><code>Archive.org</code><sub><sup _msttexthash="11861057" _msthash="448">书号： 978-0070647794</sup></sub></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><a name="user-content-statics&amp;dynamics"></a><font _mstmutation="1" _msttexthash="21555443" _msthash="449">静力学和动力学</font></h3><a id="user-content-statics-and-dynamics" class="anchor" aria-label="永久链接： 静力学和动力学" href="#statics-and-dynamics" _mstaria-label="765609" _msthash="450"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="http://ruina.tam.cornell.edu/Book/" rel="nofollow" _msttexthash="31242900" _msthash="451">静力学和动力学简介</a> <code>Cornell.edu</code></li>
+<li><a href="https://www.mechanicalc.com/reference/bolted-joint-analysis" rel="nofollow" _msttexthash="20696624" _msthash="452">螺栓连接分析</a></li>
+<li><a href="https://www.mechanicalc.com/reference/lug-analysis" rel="nofollow" _msttexthash="6552091" _msthash="453">Lug 分析</a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><a name="user-content-strength"></a><font _mstmutation="1" _msttexthash="11113830" _msthash="454">材料强度</font></h3><a id="user-content-strength-of-materials" class="anchor" aria-label="永久链接： 材料强度" href="#strength-of-materials" _mstaria-label="820534" _msthash="455"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font _mstmutation="1" _msttexthash="91372112" _msthash="456"><a href="https://archive.org/details/mechanicalmetall00diet" rel="nofollow" _mstmutation="1" _istranslated="1">机械冶金学</a>，G.E. Dieter 著（1961 年）</font><code>Archive.org</code></li>
+<li><font _mstmutation="1" _msttexthash="157409837" _msthash="457">工程<a href="http://www.etcs.ipfw.edu/~dupenb/ET_200/Applied%20Str%20of%20Mat%20for%20ET%20v12%20Jun%202017.pdf" rel="nofollow" _mstmutation="1" _istranslated="1">技术材料的应用强度</a>，<a href="http://www.etcs.ipfw.edu/~dupenb/" rel="nofollow" _mstmutation="1" _istranslated="1">作者：B. Dupen</a>（2017 年）</font><code>IPFW.edu</code></li>
+<li><font _mstmutation="1" _msttexthash="110795971" _msthash="458"><a href="https://www.amazon.com/Mechanics-Materials-James-M-Gere/dp/1111577730/ref=sr_1_1" rel="nofollow" _mstmutation="1" _istranslated="1">材料力学</a>，J.M. Gere 和 B.J. Goodno 著（2012 年）</font><code>Amazon</code><sub><sup _msttexthash="11859497" _msthash="459">书号： 978-1111577735</sup></sub></li>
+<li><font _mstmutation="1" _msttexthash="109409573" _msthash="460"><a href="https://www.amazon.com/Mechanical-Behavior-Materials-Norman-Dowling/dp/0131395068/ref=sr_1_1" rel="nofollow" _mstmutation="1" _istranslated="1">材料的机械行为</a>，N.E. Dowling 著（2012 年）</font><code>Amazon</code><sub><sup _msttexthash="11856689" _msthash="461">书号： 978-0131395060</sup></sub></li>
+<li><font _mstmutation="1" _msttexthash="472167605" _msthash="462"><a href="https://www.amazon.com/Roarks-Formulas-Stress-Strain-Warren-ebook/dp/B00938YD4Y/ref=sr_1_1" rel="nofollow" _mstmutation="1" _istranslated="1">Roark's Formulas for Stress and Strain（罗克的压力和应变公式</a>），W.C. Young 和 R.G. Budynas 著（2001 年）</font><code>Amazon</code><sub><sup _msttexthash="11857157" _msthash="463">书号： 978-0070725423</sup></sub></li>
+<li><a href="https://www.mechanicalc.com/reference/strength-of-materials" rel="nofollow" _msttexthash="11113830" _msthash="464">材料强度</a></li>
+<li><a href="https://www.mechanicalc.com/reference/beam-analysis" rel="nofollow" _msttexthash="17649138" _msthash="465">梁应力和挠度</a></li>
+<li><a href="https://www.mechanicalc.com/reference/column-buckling" rel="nofollow" _msttexthash="7961733" _msthash="466">柱屈曲</a></li>
+<li><a href="https://www.edx.org/course/engineering-structures-around-us-dartmouthx-dart-engs-02-x" rel="nofollow" _msttexthash="34156798" _msthash="467">我们周围的结构工程</a> <code>edX Dartmouth</code></li>
+<li><a href="https://www.edx.org/course/elements-structures-mitx-2-01x-1" rel="nofollow" _msttexthash="12308608" _msthash="468">结构元素</a> <code>edX MIT</code></li>
+<li><a href="https://www.mechanicalc.com/reference/material-properties" rel="nofollow" _msttexthash="25349753" _msthash="469">材料的机械性能</a></li>
+<li><font _mstmutation="1" _msttexthash="75415327" _msthash="470"><a href="http://madhuvable.org/books-2/introduction/" rel="nofollow" _mstmutation="1" _istranslated="1">材料力学</a>，<a href="http://pages.mtu.edu/~mavable/" rel="nofollow" _mstmutation="1" _istranslated="1">M. Vable</a> 著（2009 年）</font><code>MTU.edu</code></li>
+<li><font _mstmutation="1" _msttexthash="140457499" _msthash="471"><a href="http://web.mit.edu/course/3/3.225/" rel="nofollow" _mstmutation="1" _istranslated="1">材料的机械性能</a>，作者：<a href="http://web.mit.edu/roylance/www/home.html" rel="nofollow" _mstmutation="1" _istranslated="1">D. Roylance</a> （2008） [<a href="http://web.mit.edu/course/3/3.225/book.pdf" rel="nofollow" _mstmutation="1" _istranslated="1">直接</a>]</font>] <code>MIT.edu</code></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="7186608" _msthash="472">可塑性</h3><a id="user-content-plasticity" class="anchor" aria-label="永久链接：可塑性" href="#plasticity" _mstaria-label="446173" _msthash="473"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font _mstmutation="1" _msttexthash="430849029" _msthash="474"><a href="https://archive.org/details/in.ernet.dli.2015.84513" rel="nofollow" _mstmutation="1" _istranslated="1">The Mathematical Theory of Plasticity（可塑性的数学理论</a>），作者：R. Hill （1950）</font><code>Archive.org</code></li>
+<li><font _mstmutation="1" _msttexthash="207059021" _msthash="475">由E.A. de Souza Neto， D. Peric &amp; D.R.J. Owen编写的<a href="https://www.amazon.com/Computational-Methods-Plasticity-Theory-Applications/dp/0470694521/" rel="nofollow" _mstmutation="1" _istranslated="1">《可塑性计算方法</a>》</font><code>Amazon</code><sub><sup _msttexthash="11860641" _msthash="476">书号： 978-0470694527</sup></sub></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a name="user-content-machine"></a><font _mstmutation="1" _msttexthash="12830480" _msthash="477">机器理论</font></h2><a id="user-content-theory-of-machines" class="anchor" aria-label="永久链接：机器理论" href="#theory-of-machines" _mstaria-label="675597" _msthash="478"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="13993174" _msthash="479">机构设计</h3><a id="user-content-mechanism-design" class="anchor" aria-label="永久链接： 机制设计" href="#mechanism-design" _mstaria-label="623870" _msthash="480"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font _mstmutation="1" _msttexthash="194212148" _msthash="481"><a href="https://www.amazon.com/Shigleys-Mechanical-Engineering-Design-McGraw-Hill-ebook/dp/B00HZ3B1KI/ref=sr_1_2" rel="nofollow" _mstmutation="1" _istranslated="1">Shigley 的机械工程设计</a>，R.G.Budynas 和 J.K. Nisbett 著（2014 年）</font><code>Amazon</code><sub><sup _msttexthash="11858574" _msthash="482">书号：978-0073398204</sup></sub></li>
+<li><font _mstmutation="1" _msttexthash="81801083" _msthash="483"><a href="https://www.cs.cmu.edu/%7Erapidproto/mechanisms/tablecontents.html" rel="nofollow" _mstmutation="1" _istranslated="1">机制导论</a>，作者：Yi Zhang 和 S. Finger，S. Behrens。</font><code>CMU.edu</code></li>
+<li><font _mstmutation="1" _msttexthash="112365656" _msthash="484"><a href="https://archive.org/details/MechanismsMachines" rel="nofollow" _mstmutation="1" _istranslated="1">Mechanisms/Machines，L</a>. Teel 著（1972 年）</font><code>Archive.org</code></li>
+<li _msttexthash="19131957" _msthash="485"><a href="https://www.youtube.com/playlist?list=PLNWWAQ4wioJxZ3_UBEWIbOq7hiA0dnJ8J" rel="nofollow" _istranslated="1">米尼索塔大学</a>'YouTube'</li>
+<li _msttexthash="157907048" _msthash="486">[NPTEL IIT Kgp 机构和机器人运动学]（<a href="https://onlinecourses.nptel.ac.in/noc18_me18" rel="nofollow" _istranslated="1">https://onlinecourses.nptel.ac.in/noc18_me18</a>）'NPTEL'</li>
+<li _msttexthash="95705532" _msthash="487"><a href="http://pergatory.mit.edu/resources/fundamentals.html" rel="nofollow" _istranslated="1">麻省理工学院设计基础</a>'麻省理工学院'</li>
+<li _msttexthash="51487306" _msthash="488"><a href="http://nptel.ac.in/courses/112104121/1#" rel="nofollow" _istranslated="1">NPTEL- 机器的运动学</a>“课件”</li>
+<li _msttexthash="24547133" _msthash="489"><a href="http://ocw.metu.edu.tr/mod/resource/view.php?id=2094" rel="nofollow" _istranslated="1">中东 TU 机制</a>“课件”</li>
+<li><a href="http://kmoddl.library.cornell.edu/" rel="nofollow" _msttexthash="125190715" _msthash="490">康奈尔大学设计数字库的运动学模型 （KMODDL）</a></li>
+<li><font _mstmutation="1" _msttexthash="176737418" _msthash="491"><a href="https://www.amazon.in/1-Mechanism-Design-Analysis-Synthesis/dp/0130408727/" rel="nofollow" _mstmutation="1" _istranslated="1">机制设计：第 1 卷：Arthur</a> G. Erdman、George N. Sandor、Sridhar Kota 的分析和综合</font><code>Amazon</code><sub><sup _msttexthash="11856923" _msthash="492">书号： 978-0130408723</sup></sub></li>
+<li><font _mstmutation="1" _msttexthash="176737587" _msthash="493"><a href="https://www.amazon.in/1-Mechanism-Design-Analysis-Synthesis/dp/0130408727/" rel="nofollow" _mstmutation="1" _istranslated="1">机制设计：第 2 卷：Arthur</a> G. Erdman、George N. Sandor、Sridhar Kota 的分析和综合</font><code>Amazon</code><sub><sup _msttexthash="11856923" _msthash="494">书号： 978-0130408723</sup></sub></li>
+<li><font _mstmutation="1" _msttexthash="114787764" _msthash="495">罗伯特·诺顿 （Robert L Norton<a href="http://amzn.to/2FTZQbu" rel="nofollow" _mstmutation="1" _istranslated="1">） 的机械设计</a></font><code>Amazon</code><sub><sup _msttexthash="11857248" _msthash="496">书号：978-0071236713</sup></sub></li>
+<li><font _mstmutation="1" _msttexthash="96414058" _msthash="497"><a href="https://www.amazon.in/Mechanisms-Mechanical-Sourcebook-Nicholas-Chironis/dp/0070113564" rel="nofollow" _mstmutation="1" _istranslated="1">机械和机械设备资料集</a>，作者：Nicholas Paul Chironis、Neil Sclater</font><code>Amazon</code><sub><sup _msttexthash="11857001" _msthash="498">书号：978-0070113565</sup></sub></li>
+<li></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="11384204" _msthash="499">控制工程</h3><a id="user-content-control-engineering" class="anchor" aria-label="永久链接： 控制工程" href="#control-engineering" _mstaria-label="768768" _msthash="500"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font _mstmutation="1" _msttexthash="90238538" _msthash="501"><a href="https://www.amazon.com/Modern-Control-Engineering-Katsuhiko-Ogata/dp/0136156738/ref=sr_1_cc_4" rel="nofollow" _mstmutation="1" _istranslated="1">现代控制工程</a>，K. Ogata 著（2009 年）</font><code>Amazon</code><sub><sup _msttexthash="11858847" _msthash="502">书号： 978-0136156734</sup></sub></li>
+<li><font _mstmutation="1" _msttexthash="160150718" _msthash="503"><a href="https://www.amazon.com/Automatic-Control-Systems-Tenth-Golnaraghi/dp/1259643832/ref=sr_1_1" rel="nofollow" _mstmutation="1" _istranslated="1">《自动控制系统</a>》，作者：F. Golnaraghi 和 B.C. Kuo（2017 年）</font><code>Amazon</code><sub><sup _msttexthash="11861018" _msthash="504">书号： 978-1259643835</sup></sub></li>
+<li><font _mstmutation="1" _msttexthash="102423971" _msthash="505"><a href="https://www.amazon.com/Control-Systems-Engineering-Norman-Nise/dp/1118170512/ref=sr_1_1" rel="nofollow" _mstmutation="1" _istranslated="1">控制系统工程</a>，作者：N.S. Nise （2015）</font><code>Amazon</code><sub><sup _msttexthash="11858366" _msthash="506">书号： 978-1118170519</sup></sub></li>
+<li><font _mstmutation="1" _msttexthash="131455558" _msthash="507"><a href="https://www.amazon.com/Linear-Control-Prentice-Information-Sciences/dp/0131022784/ref=sr_1_" rel="nofollow" _mstmutation="1" _istranslated="1">线性稳健控制</a>，作者：M. Green 和 D.J.N. Limebeer （1994）</font><code>Amazon</code><sub><sup _msttexthash="11856559" _msthash="508">书号： 978-0131022782</sup></sub></li>
+<li><font _mstmutation="1" _msttexthash="90956450" _msthash="509"><a href="https://www.amazon.com/Essentials-Robust-Control-Kemin-Zhou/dp/0135258332/ref=sr_1_1" rel="nofollow" _mstmutation="1" _istranslated="1">稳健控制要点</a>，K. 周 和 J.C. Doyle （1997）</font><code>Amazon</code><sub><sup _msttexthash="11857092" _msthash="510">书号： 978-0135258330</sup></sub></li>
+<li><font _mstmutation="1" _msttexthash="178832472" _msthash="511"><a href="https://www.amazon.com/Feedback-Control-Theory-Electrical-Engineering/dp/0486469336/ref=sr_1_1" rel="nofollow" _mstmutation="1" _istranslated="1">反馈控制理论</a>，J.C. Doyle、B.A. Francis 和 A.R. Tannenbaum 著（2009 年）</font><code>Amazon</code><sub><sup _msttexthash="11860212" _msthash="512">书号：978-0486469331</sup></sub></li>
+<li><font _mstmutation="1" _msttexthash="146212391" _msthash="513">K.J. Åström 和 R. Murray 的<a href="http://www.cds.caltech.edu/~murray/books/AM08/pdf/am08-complete_30Aug11.pdf" rel="nofollow" _mstmutation="1" _istranslated="1">《反馈系统</a>》（2011 年）</font><code>CalTech.edu</code></li>
+<li><font _mstmutation="1" _msttexthash="55735147" _msthash="514"><a href="https://www.youtube.com/playlist?list=PLUMWjy5jgHK1NC52DXXrriwihVrYZKqjk" rel="nofollow" _mstmutation="1" _istranslated="1">经典控制理论</a>，作者：Brian Douglas</font><code>youtube</code></li>
+<li><a href="https://en.wikibooks.org/wiki/Control_Systems" rel="nofollow" _msttexthash="12475970" _msthash="515">控制系统</a> <code>wikibooks</code></li>
+<li><font _mstmutation="1" _msttexthash="181906426" _msthash="516"><a href="https://ocw.mit.edu/courses/mechanical-engineering/2-017j-design-of-electromechanical-robotic-systems-fall-2009/course-text/MIT2_017JF09_coursetext.pdf" rel="nofollow" _mstmutation="1" _istranslated="1">《不确定性的系统设计</a>》，作者：F.S. Hover &amp; M.S. Triantafyllou （2009）</font><code>MIT.edu</code></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="7063264" _msthash="517">机器人</h3><a id="user-content-robotics" class="anchor" aria-label="永久链接： 机器人技术" href="#robotics" _mstaria-label="371046" _msthash="518"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font _mstmutation="1" _msttexthash="55755362" _msthash="519"><a href="https://github.com/Kiloreux/awesome-robotics" _mstmutation="1" _istranslated="1">Awesome Robotics List</a>，由 <a href="https://github.com/kiloreux" _mstmutation="1" _istranslated="1">@Kiloreux</a> 提供</font> <code>github</code></li>
+<li><a href="http://www.cds.caltech.edu/~murray/mlswiki/?title=First_edition" rel="nofollow" _msttexthash="37388403" _msthash="520">机器人操作的数学介绍</a> <code>Caltech.edu</code></li>
+</ul>
+<hr>
+<div align="right" dir="auto">
+<p dir="auto"><sup><a href="#toc" _msttexthash="15341105" _msthash="521">返回页首</a></sup> ^</p>
 </div>
-
-## <a name="thermo"></a>Thermal Engineering
-### Thermodynamics
-* [NASA's Introductory Thermodynamics Notes](https://www.grc.nasa.gov/www/k-12/airplane/thermo.html) `NASA`
-* [MIT OpenCourseWare: Thermodynamics & Kinematics Lecture Series](https://ocw.mit.edu/courses/chemistry/5-60-thermodynamics-kinetics-spring-2008/) `MIT.edu`
-* [Wikibooks: Engineering Thermodynamics](https://en.wikibooks.org/wiki/Engineering_Thermodynamics) `Wikibooks`
-* [Fundamentals of Engineering Thermodynamics](https://www.amazon.com/Fundamentals-Engineering-Thermodynamics-Michael-Moran/dp/0471787353/), by M.J. Moran & H.N. Shapiro. `Amazon`
-&emsp; <sub><sup>ISBN: 978-0471274711</sup></sub>
-* [Thermodynamics: An Engineering Approach](https://www.amazon.com/Thermodynamics-Engineering-Yunus-Cengel-Dr/dp/0073398179/), by Y.A. Cengel & M.A. Boles. `Amazon`
-&emsp; <sub><sup>ISBN: 978-0073398174</sup></sub>
-
-### Heat Transfer
-* [MIT OpenCourseWare: Introduction to Heat Transfer](https://ocw.mit.edu/courses/mechanical-engineering/2-051-introduction-to-heat-transfer-fall-2015/) `MIT.edu`
-* [A Heat Transfer Textbook](http://web.mit.edu/lienhard/www/ahtt.html), by J.H. Lienhard IV and [J.H. Lienhard V](http://meche.mit.edu/people/faculty/lienhard@mit.edu) (2017) `MIT.edu` 
-* [Wikibooks: Heat Transfer](https://en.wikibooks.org/wiki/Heat_Transfer) `Wikibooks`
-* [Fundamentals of Heat and Mass Transfer](https://www.amazon.com/Fundamentals-Heat-Mass-Transfer-5th/dp/0471386502/) , by F.P. Incropera & D.P. DeWitt. `Amazon`
-&emsp; <sub><sup>ISBN: 978-0471386506</sup></sub>
-
-### Fluid Mechanics
-* [NASA's Basic Fluid Mechanics Notes](https://www.grc.nasa.gov/www/k-12/airplane/mass.html) `NASA`
-* [MIT OpenCourseWare: Fluid Dynamics](https://ocw.mit.edu/courses/mechanical-engineering/2-06-fluid-dynamics-spring-2013/) `MIT.edu`
-* [Wikibooks: Fluid Mechanics](https://en.wikibooks.org/wiki/Fluid_Mechanics) `Wikibooks`
-* Thermophysical properties of water and steam: [International Association for the Properties of Water and Steam](http://iapws.org/relguide/IAPWS-95.html)
-* [Fundamentals of Fluid Mechanics](https://www.amazon.com/Fundamentals-Fluid-Mechanics-Bruce-Munson/dp/047144250X), by B.R. Munson, D.R. Young & T.H. Okiishi. `Amazon`
-&emsp; <sub><sup>ISBN: 978-0471442509</sup></sub>
-
-### Gas Dynamics
-* [NASA's Compressible Fluids/Aerodynamics Notes](https://www.grc.nasa.gov/www/k-12/airplane/shortc.html) `NASA`
-* [Modern Compressible Flow: With Historical Perspective](https://www.amazon.com/Modern-Compressible-Flow-Historical-Perspective/dp/0071241361/), by J.D. Anderson. `Amazon`
-&emsp; <sub><sup>ISBN: 978-0072424430</sup></sub>
-
----
-<div align="right">
-
-<sup>[Back to Top](#toc)</sup> &Hat;
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a name="user-content-thermo"></a><font _mstmutation="1" _msttexthash="12938822" _msthash="522">热能工程</font></h2><a id="user-content-thermal-engineering" class="anchor" aria-label="固定链接： 热能工程" href="#thermal-engineering" _mstaria-label="762775" _msthash="523"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="7567573" _msthash="524">热力学</h3><a id="user-content-thermodynamics" class="anchor" aria-label="永久链接： 热力学" href="#thermodynamics" _mstaria-label="600535" _msthash="525"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://www.grc.nasa.gov/www/k-12/airplane/thermo.html" rel="nofollow" _msttexthash="48895535" _msthash="526">NASA 的介绍性热力学笔记</a> <code>NASA</code></li>
+<li><a href="https://ocw.mit.edu/courses/chemistry/5-60-thermodynamics-kinetics-spring-2008/" rel="nofollow" _msttexthash="133274050" _msthash="527">MIT OpenCourseWare：热力学与运动学讲座系列</a> <code>MIT.edu</code></li>
+<li><a href="https://en.wikibooks.org/wiki/Engineering_Thermodynamics" rel="nofollow" _msttexthash="50402417" _msthash="528">维基教科书： 工程热力学</a> <code>Wikibooks</code></li>
+<li><font _mstmutation="1" _msttexthash="78638495" _msthash="529"><a href="https://www.amazon.com/Fundamentals-Engineering-Thermodynamics-Michael-Moran/dp/0471787353/" rel="nofollow" _mstmutation="1" _istranslated="1">《工程热力学基础</a>》，作者：M.J. Moran &amp; H.N. Shapiro。</font><code>Amazon</code><sub><sup _msttexthash="11857898" _msthash="530">书号：978-0471274711</sup></sub></li>
+<li><font _mstmutation="1" _msttexthash="108878445" _msthash="531"><a href="https://www.amazon.com/Thermodynamics-Engineering-Yunus-Cengel-Dr/dp/0073398179/" rel="nofollow" _mstmutation="1" _istranslated="1">《热力学：一种工程方法</a>》，作者：Y.A. Cengel &amp; M.A. Boles。</font><code>Amazon</code><sub><sup _msttexthash="11860303" _msthash="532">书号： 978-0073398174</sup></sub></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="4849832" _msthash="533">传热</h3><a id="user-content-heat-transfer" class="anchor" aria-label="永久链接：热传递" href="#heat-transfer" _mstaria-label="508027" _msthash="534"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://ocw.mit.edu/courses/mechanical-engineering/2-051-introduction-to-heat-transfer-fall-2015/" rel="nofollow" _msttexthash="55501563" _msthash="535">MIT OpenCourseWare：传热简介</a> <code>MIT.edu</code></li>
+<li><font _mstmutation="1" _msttexthash="142751011" _msthash="536"><a href="http://web.mit.edu/lienhard/www/ahtt.html" rel="nofollow" _mstmutation="1" _istranslated="1">传热教科书</a>，J.H. Lienhard IV 和 <a href="http://meche.mit.edu/people/faculty/lienhard@mit.edu" rel="nofollow" _mstmutation="1" _istranslated="1">J.H. Lienhard V</a> 著（2017 年）</font><code>MIT.edu</code></li>
+<li><a href="https://en.wikibooks.org/wiki/Heat_Transfer" rel="nofollow" _msttexthash="34131851" _msthash="537">维基教科书： 传热</a> <code>Wikibooks</code></li>
+<li><font _mstmutation="1" _msttexthash="72393009" _msthash="538"><a href="https://www.amazon.com/Fundamentals-Heat-Mass-Transfer-5th/dp/0471386502/" rel="nofollow" _mstmutation="1" _istranslated="1">《热与传质基础</a>》，作者：F.P. Incropera &amp; D.P. DeWitt。</font><code>Amazon</code><sub><sup _msttexthash="11859562" _msthash="539">书号： 978-0471386506</sup></sub></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="10173046" _msthash="540">流体力学</h3><a id="user-content-fluid-mechanics" class="anchor" aria-label="永久链接：流体力学" href="#fluid-mechanics" _mstaria-label="579644" _msthash="541"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://www.grc.nasa.gov/www/k-12/airplane/mass.html" rel="nofollow" _msttexthash="45804330" _msthash="542">NASA 的基本流体力学说明</a> <code>NASA</code></li>
+<li><a href="https://ocw.mit.edu/courses/mechanical-engineering/2-06-fluid-dynamics-spring-2013/" rel="nofollow" _msttexthash="60607066" _msthash="543">MIT OpenCourseWare：流体动力学</a> <code>MIT.edu</code></li>
+<li><a href="https://en.wikibooks.org/wiki/Fluid_Mechanics" rel="nofollow" _msttexthash="42860233" _msthash="544">维基教科书： 流体力学</a> <code>Wikibooks</code></li>
+<li _msttexthash="137895446" _msthash="545">水和蒸汽的热物理性质：<a href="http://iapws.org/relguide/IAPWS-95.html" rel="nofollow" _istranslated="1">国际水和蒸汽性质协会</a></li>
+<li><font _mstmutation="1" _msttexthash="182828074" _msthash="546">由B.R. Munson， D.R. Young和T.H. Okiishi编写的<a href="https://www.amazon.com/Fundamentals-Fluid-Mechanics-Bruce-Munson/dp/047144250X" rel="nofollow" _mstmutation="1" _istranslated="1">《流体力学基础</a>》。</font><code>Amazon</code><sub><sup _msttexthash="11858665" _msthash="547">书号： 978-0471442509</sup></sub></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="13200460" _msthash="548">气体动力学</h3><a id="user-content-gas-dynamics" class="anchor" aria-label="永久链接： Gas Dynamics" href="#gas-dynamics" _mstaria-label="466635" _msthash="549"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://www.grc.nasa.gov/www/k-12/airplane/shortc.html" rel="nofollow" _msttexthash="77951133" _msthash="550">NASA 的可压缩流体/空气动力学说明</a> <code>NASA</code></li>
+<li><font _mstmutation="1" _msttexthash="87753315" _msthash="551"><a href="https://www.amazon.com/Modern-Compressible-Flow-Historical-Perspective/dp/0071241361/" rel="nofollow" _mstmutation="1" _istranslated="1">现代可压缩流：历史视角</a>，J.D. Anderson 著。</font><code>Amazon</code><sub><sup _msttexthash="11856026" _msthash="552">书号： 978-0072424430</sup></sub></li>
+</ul>
+<hr>
+<div align="right" dir="auto">
+<p dir="auto"><sup><a href="#toc" _msttexthash="15341105" _msthash="553">返回页首</a></sup> ^</p>
 </div>
-
-## Manufacturing
-
-* [Fundamentals of Manufacturing Processes](https://www.edx.org/course/fundamentals-manufacturing-processes-mitx-2-008x-0) `edX MIT` 
-* [A.J. Hart](http://meche.mit.edu/people/faculty/ajhart@mit.edu)'s [Presentations](https://www.slideshare.net/AJohnHart/presentations) `slideshare`
-* [Building Prototypes](https://www.youtube.com/watch?v=xMP_AfiNlX4), by D. Gelbart `youtube`
-* [Fabrication Labs](http://www.fabfoundation.org/index.html), Labs available globally
-### CAD/CAM
-
-#### Theory
-* [Shape Interrogation for CAD and Manufacturing](http://web.mit.edu/hyperbook/Patrikalakis-Maekawa-Cho/), by N.M. Patrikalakis, T. Maekawa & W. Cho (2009). `MIT.edu` 
-([Amazon](https://www.amazon.com/exec/obidos/ASIN/3540424547/qid=1014647930/sr=8-1/ref=sr_)) &emsp; <sub><sup>ISBN: 978-3540424543</sup></sub>
-* [Geometric and Solid Modeling](https://www.cs.purdue.edu/homes/cmh/distribution/books/geo.html), by C.M. Hoffman (1992) *Out of Print* `Purdue.edu`
-* [Computer Aided Geometric Design](http://tom.cs.byu.edu/~557/text/cagd.pdf), by T.W. Sederberg (2006) `BYU.edu`
-* [Curves and Surfaces in Geometric Modeling](http://www.cis.upenn.edu/~jean/gbooks/geom1.html) by [J. Gallier](http://www.cis.upenn.edu/~jean/home.html) (1999) *Out of Print* `UPenn.edu`
-&emsp; <sub><sup>ISBN: 978-1558605992</sup></sub>
-* [Geometric Modeling: A First Course,](http://www-bcf.usc.edu/~requicha/book.html) by [A. Requicha](http://www-bcf.usc.edu/~requicha/) (1996) *Draft* `USC.edu`
-* [Computer Aided Design in Mechanical Engineering](http://www.cgeo.ulg.ac.be/CAO/) *Slides* `ULiege.be`
-
-#### Learning and Tutorials
-* [Vertanux1](http://www.vertanux1.com/), Training Guides: Creo, Solidworks, NX, Inventor, Rhino3d.
-  * [vertanux1's channel](https://www.youtube.com/user/vertanux1/) `youtube`
-
-##### Technique
-* **Resilient Modeling Strategy (RMS)**
-  * [A Resilient Modeling Strategy](https://community.plm.automation.siemens.com/siemensplm/attachments/siemensplm/solid-edge-tkb/159/1/122%20-%20A%20Resilient%20Modeling%20Strategy%20%20-%20Richard%20Gebhard.pdf), by R. Gebhard (Slides) `Siemens`
-    * [RMS Presentation](https://www.youtube.com/watch?v=QGj3hwtyZxQ) `youtube`
-  * [Learn RMS](http://learnrms.com/)
-* **Horizontal Modeling**
-  * [Horizontally structured CAD/CAM modeling-vertical to horizontal conversion [US 7472044 B2]](https://www.google.com/patents/US7472044) `patent`
-  * [Product/Process Design using Horizontally Structured Modeling](www.dezignstuff.com/swparts/Delphi-Burke.pdf), by Delphi Automotive `dezignstuff.com`
-  * [Going Horizontal (The failed promise of parametric CAD, part 4)](http://www.3dcadworld.com/going-horizontal/) `3dcadworld.com`
-
-### Sheet Metal Forming
-* [Mechanics of Sheet Metal Forming](https://www.amazon.com/Mechanics-Sheet-Metal-Forming-Second/dp/0750653000), by Z. Marciniak, J.L. Duncan and S.J. Hu (2002) `Amazon`
-&emsp; <sub><sup>ISBN: 978-0750653008</sup></sub>
-* [MDLPostech Mechanical Properties of Steel](https://www.youtube.com/watch?v=3K-8Emy8JQA&list=PLj4YiOgq320p4ASmEwWJzPXNusBFNwuPM) `youtube`
-* [SheetMetal.me](http://sheetmetal.me/)
-
-### Plastic
- * [Polymer Processing](http://encyclopedia.che.engin.umich.edu/Pages/PolymerProcessing/menu.html) `UMich.edu`
- * [BASF Snap-Fit Design Manual](http://web.mit.edu/2.75/resources/random/Snap-Fit%20Design%20Manual.pdf)
- * [Bayer Snap-Fit Joints for Plastics](http://fab.cba.mit.edu/classes/S62.12/people/vernelle.noel/Plastic_Snap_fit_design.pdf)
- * [Living Hinges Design Guide](http://web.mit.edu/2.75/resources/random/Living%20Hinge%20Design.pdf) `MIT.edu`
- * [Bayer Part and Mold Design Guide](https://blackboard.tudelft.nl/bbcswebdav/courses/consultancy/Basic_Des/Dsn_Plastics_Bayer.pdf)
- * [DuPont General Design Principles for Engineering Polymers](http://www.dupont.com/content/dam/dupont/products-and-services/plastics-polymers-and-resins/thermoplastics/documents/General%20Design%20Principles/General%20Design%20Principles%20for%20Engineering%20Polymers.pdf)
- * [Bayer Reaction Injection Molding (PolyUrethanes), Part and Mold Design Guide](http://www.reactioninjectionmolding.com/wp-content/uploads/2013/09/RIM-PartMoldDesignGuide.pdf)
- * [3D Hubs Knowledge Base](https://www.3dhubs.com/knowledge-base)
-
----
-<div align="right">
-
-<sup>[Back to Top](#toc)</sup> &Hat;
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="8091668" _msthash="554">制造业</h2><a id="user-content-manufacturing" class="anchor" aria-label="永久链接： 制造业" href="#manufacturing" _mstaria-label="557674" _msthash="555"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://www.edx.org/course/fundamentals-manufacturing-processes-mitx-2-008x-0" rel="nofollow" _msttexthash="20929909" _msthash="556">制造工艺基础</a> <code>edX MIT</code></li>
+<li><font _mstmutation="1" _msttexthash="19825533" _msthash="557"><a href="http://meche.mit.edu/people/faculty/ajhart@mit.edu" rel="nofollow" _mstmutation="1" _istranslated="1">A.J. Hart</a> 的<a href="https://www.slideshare.net/AJohnHart/presentations" rel="nofollow" _mstmutation="1" _istranslated="1">演讲</a></font> <code>slideshare</code></li>
+<li><font _mstmutation="1" _msttexthash="158915861" _msthash="558"><a href="https://www.youtube.com/watch?v=xMP_AfiNlX4" rel="nofollow" _mstmutation="1" _istranslated="1">Building Prototypes（构建原型</a>），作者：D. Gelbart</font><code>youtube</code></li>
+<li _msttexthash="74600903" _msthash="559"><a href="http://www.fabfoundation.org/index.html" rel="nofollow" _istranslated="1">制造实验室</a>，全球可用的实验室</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="9980672" _msthash="560">CAD/CAM 系列</h3><a id="user-content-cadcam" class="anchor" aria-label="永久链接： CAD/CAM" href="#cadcam" _mstaria-label="265642" _msthash="561"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="6422962" _msthash="562">理论</h4><a id="user-content-theory" class="anchor" aria-label="永久链接： 理论" href="#theory" _mstaria-label="309140" _msthash="563"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font _mstmutation="1" _msttexthash="542898889" _msthash="564">由N.M. Patrikalakis， T. Maekawa &amp; W. Cho （2009）编写的《<a href="http://web.mit.edu/hyperbook/Patrikalakis-Maekawa-Cho/" rel="nofollow" _mstmutation="1" _istranslated="1">CAD和制造的形状询问</a>》。 （<a href="https://www.amazon.com/exec/obidos/ASIN/3540424547/qid=1014647930/sr=8-1/ref=sr_" rel="nofollow" _mstmutation="1" _istranslated="1">亚马逊</a>）</font><code>MIT.edu</code><sub><sup _msttexthash="11857937" _msthash="565">书号： 978-3540424543</sup></sub></li>
+<li><font _mstmutation="1" _msttexthash="121498039" _msthash="566"><a href="https://www.cs.purdue.edu/homes/cmh/distribution/books/geo.html" rel="nofollow" _mstmutation="1" _istranslated="1">几何和实体建模</a>，C.M. Hoffman 著 （1992） <em _mstmutation="1" _istranslated="1">绝版</em></font> <code>Purdue.edu</code></li>
+<li><font _mstmutation="1" _msttexthash="401841648" _msthash="567"><a href="http://tom.cs.byu.edu/~557/text/cagd.pdf" rel="nofollow" _mstmutation="1" _istranslated="1">Computer Aided Geometric Design（计算机辅助几何设计</a>），T.W. Sederberg 著（2006 年）</font><code>BYU.edu</code></li>
+<li><font _mstmutation="1" _msttexthash="161251909" _msthash="568"><a href="http://www.cis.upenn.edu/~jean/gbooks/geom1.html" rel="nofollow" _mstmutation="1" _istranslated="1">几何建模中的曲线和曲面</a> 作者：<a href="http://www.cis.upenn.edu/~jean/home.html" rel="nofollow" _mstmutation="1" _istranslated="1">J. Gallier</a> （1999） <em _mstmutation="1" _istranslated="1">绝版</em></font><code>UPenn.edu</code><sub><sup _msttexthash="11862006" _msthash="569">书号： 978-1558605992</sup></sub></li>
+<li><font _mstmutation="1" _msttexthash="199638049" _msthash="570"><a href="http://www-bcf.usc.edu/~requicha/book.html" rel="nofollow" _mstmutation="1" _istranslated="1">《几何建模：第一门课程》，</a>作者：<a href="http://www-bcf.usc.edu/~requicha/" rel="nofollow" _mstmutation="1" _istranslated="1">A. Requicha</a> （1996） <em _mstmutation="1" _istranslated="1">草稿</em></font> <code>USC.edu</code></li>
+<li><font _mstmutation="1" _msttexthash="89694657" _msthash="571"><a href="http://www.cgeo.ulg.ac.be/CAO/" rel="nofollow" _mstmutation="1" _istranslated="1">机械工程幻灯片中的计算机辅助设计</a> <em _mstmutation="1" _istranslated="1"></em></font> <code>ULiege.be</code></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="14588821" _msthash="572">学习和教程</h4><a id="user-content-learning-and-tutorials" class="anchor" aria-label="永久链接：学习和教程" href="#learning-and-tutorials" _mstaria-label="872586" _msthash="573"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font _mstmutation="1" _msttexthash="91678340" _msthash="574"><a href="http://www.vertanux1.com/" rel="nofollow" _mstmutation="1" _istranslated="1">Vertanux1</a>，培训指南：Creo、Solidworks、NX、Inventor、Rhino3d。</font><ul dir="auto">
+<li><a href="https://www.youtube.com/user/vertanux1/" rel="nofollow" _msttexthash="23716862" _msthash="575">Vertanux1 的频道</a> <code>youtube</code></li>
+</ul>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h5 tabindex="-1" class="heading-element" dir="auto" _msttexthash="5041816" _msthash="576">技术</h5><a id="user-content-technique" class="anchor" aria-label="永久链接：技术" href="#technique" _mstaria-label="403572" _msthash="577"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><strong _msttexthash="45868069" _msthash="578">弹性建模策略 （RMS）</strong>
+<ul dir="auto">
+<li><font _mstmutation="1" _msttexthash="216446594" _msthash="579"><a href="https://community.plm.automation.siemens.com/siemensplm/attachments/siemensplm/solid-edge-tkb/159/1/122%20-%20A%20Resilient%20Modeling%20Strategy%20%20-%20Richard%20Gebhard.pdf" rel="nofollow" _mstmutation="1" _istranslated="1">A Resilient Modeling Strategy</a>，作者：R. Gebhard（幻灯片）</font><code>Siemens</code>
+<ul dir="auto">
+<li><a href="https://www.youtube.com/watch?v=QGj3hwtyZxQ" rel="nofollow" _msttexthash="17503174" _msthash="580">RMS 演示文稿</a> <code>youtube</code></li>
+</ul>
+</li>
+<li><a href="http://learnrms.com/" rel="nofollow" _msttexthash="5531851" _msthash="581">了解 RMS</a></li>
+</ul>
+</li>
+<li><strong _msttexthash="11412024" _msthash="582">水平建模</strong>
+<ul dir="auto">
+<li><a href="https://www.google.com/patents/US7472044" rel="nofollow" _msttexthash="84095479" _msthash="583">水平结构 CAD/CAM 建模 - 垂直到水平转换 [US 7472044 B2]</a> <code>patent</code></li>
+<li><font _mstmutation="1" _msttexthash="243649211" _msthash="584"><a href="/m2n037/awesome-mecheng/blob/master/www.dezignstuff.com/swparts/Delphi-Burke.pdf" _mstmutation="1" _istranslated="1">使用 Horizontally Structured Modeling 进行产品/流程设计</a>，由 Delphi Automotive 提供</font><code>dezignstuff.com</code></li>
+<li><a href="http://www.3dcadworld.com/going-horizontal/" rel="nofollow" _msttexthash="143918320" _msthash="585">水平发展（参数化 CAD 的失败承诺，第 4 部分）</a> <code>3dcadworld.com</code></li>
+</ul>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="13195455" _msthash="586">钣金成型</h3><a id="user-content-sheet-metal-forming" class="anchor" aria-label="永久链接：钣金成型" href="#sheet-metal-forming" _mstaria-label="711425" _msthash="587"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font _mstmutation="1" _msttexthash="197242669" _msthash="588"><a href="https://www.amazon.com/Mechanics-Sheet-Metal-Forming-Second/dp/0750653000" rel="nofollow" _mstmutation="1" _istranslated="1">钣金成型的力学</a>，作者：Z. Marciniak、J.L. Duncan 和 S.J. 胡（2002 年）</font><code>Amazon</code><sub><sup _msttexthash="11857924" _msthash="589">书号： 978-0750653008</sup></sub></li>
+<li><a href="https://www.youtube.com/watch?v=3K-8Emy8JQA&amp;list=PLj4YiOgq320p4ASmEwWJzPXNusBFNwuPM" rel="nofollow" _msttexthash="34496462" _msthash="590">MDL钢材的机械性能</a> <code>youtube</code></li>
+<li><a href="http://sheetmetal.me/" rel="nofollow" _msttexthash="212095" _msthash="591">SheetMetal.me</a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="5490875" _msthash="592">塑胶</h3><a id="user-content-plastic" class="anchor" aria-label="永久链接：塑料" href="#plastic" _mstaria-label="334815" _msthash="593"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="http://encyclopedia.che.engin.umich.edu/Pages/PolymerProcessing/menu.html" rel="nofollow" _msttexthash="14841190" _msthash="594">聚合物加工</a> <code>UMich.edu</code></li>
+<li><a href="http://web.mit.edu/2.75/resources/random/Snap-Fit%20Design%20Manual.pdf" rel="nofollow" _msttexthash="34454342" _msthash="595">BASF 卡扣式设计手册</a></li>
+<li><a href="http://fab.cba.mit.edu/classes/S62.12/people/vernelle.noel/Plastic_Snap_fit_design.pdf" rel="nofollow" _msttexthash="27131091" _msthash="596">Bayer 塑料卡扣接头</a></li>
+<li><a href="http://web.mit.edu/2.75/resources/random/Living%20Hinge%20Design.pdf" rel="nofollow" _msttexthash="31352984" _msthash="597">Living Hinges 设计指南</a> <code>MIT.edu</code></li>
+<li><a href="https://blackboard.tudelft.nl/bbcswebdav/courses/consultancy/Basic_Des/Dsn_Plastics_Bayer.pdf" rel="nofollow" _msttexthash="47192743" _msthash="598">拜耳零件和模具设计指南</a></li>
+<li><a href="http://www.dupont.com/content/dam/dupont/products-and-services/plastics-polymers-and-resins/thermoplastics/documents/General%20Design%20Principles/General%20Design%20Principles%20for%20Engineering%20Polymers.pdf" rel="nofollow" _msttexthash="69506671" _msthash="599">杜邦工程聚合物的一般设计原则</a></li>
+<li><a href="http://www.reactioninjectionmolding.com/wp-content/uploads/2013/09/RIM-PartMoldDesignGuide.pdf" rel="nofollow" _msttexthash="224217578" _msthash="600">拜耳反应注射成型（聚氨基甲酸乙酯），零件和模具设计指南</a></li>
+<li><a href="https://www.3dhubs.com/knowledge-base" rel="nofollow" _msttexthash="16487887" _msthash="601">3D Hubs 知识库</a></li>
+</ul>
+<hr>
+<div align="right" dir="auto">
+<p dir="auto"><sup><a href="#toc" _msttexthash="15341105" _msthash="602">返回页首</a></sup> ^</p>
 </div>
-
-## <a name="fea"></a>Finite Element Analysis
-* [Finite Element Procedures](http://web.mit.edu/kjb/www/Books/FEP_2nd_Edition_4th_Printing.pdf), by [K.J. Bathe](http://meche.mit.edu/people/faculty/kjb@mit.edu) (2014) `MIT.edu`
-&emsp; <sub><sup>ISBN: 978-0979004957</sup></sub>
-* [Introduction to the Finite Element Method](http://hyfem.com/HyFem/fem.pdf), by C.S. Jog
-* [Introduction to Finite Element Methods](https://www.colorado.edu/engineering/CAS/courses.d/IFEM.d/) `Colorado.edu`
-  * [Advance FEM](https://www.colorado.edu/engineering/CAS/courses.d/AFEM.d/Home.html)
-  * [Nonlinear FEM](https://www.colorado.edu/engineering/CAS/courses.d/NFEM.d/Home.html)
-* [FINITE ELEMENT MODELING CONTINUOUS IMPROVEMENT ](https://femci.gsfc.nasa.gov/femcibook.html), (NASA FEMCI book)
-
-###### Good Reads
-* [Meshing of complex geometrical domains](http://engineering.stackexchange.com/a/7326/2918) `stackexchange`
-* [What Is a Good Linear Finite Element?](http://people.eecs.berkeley.edu/~jrs/papers/elemj.pdf) by [J.R. Shewchuk](http://people.eecs.berkeley.edu/~jrs/) (2002) `Berkeley.edu`
-* [How Can I learn Finite Element Analysis?](https://www.simscale.com/blog/2016/11/learn-finite-element-analysis-fea/) `simscale`
-* [Why CAD Surface Geometry is Inexact](https://blog.pointwise.com/2017/11/29/why-cad-surface-geometry-is-inexact/) `pointwise`
-
-#### Code
-* [deal.II](https://www.dealii.org/) (C++ library)
-* [FEniCS Project](https://fenicsproject.org/) (C++ and Python library)
-* [List of FE packages](https://en.wikipedia.org/wiki/List_of_finite_element_software_packages) `wikipedia`
-
----
-<div align="right">
-
-<sup>[Back to Top](#toc)</sup> &Hat;
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a name="user-content-fea"></a><font _mstmutation="1" _msttexthash="15357134" _msthash="603">有限元分析</font></h2><a id="user-content-finite-element-analysis" class="anchor" aria-label="永久链接：有限元分析" href="#finite-element-analysis" _mstaria-label="911612" _msthash="604"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font _mstmutation="1" _msttexthash="108851015" _msthash="605"><a href="http://web.mit.edu/kjb/www/Books/FEP_2nd_Edition_4th_Printing.pdf" rel="nofollow" _mstmutation="1" _istranslated="1">《有限元程序</a>》，作者：<a href="http://meche.mit.edu/people/faculty/kjb@mit.edu" rel="nofollow" _mstmutation="1" _istranslated="1">K.J. Bathe</a> （2014）</font><code>MIT.edu</code><sub><sup _msttexthash="11861928" _msthash="606">书号： 978-0979004957</sup></sub></li>
+<li _msttexthash="325804804" _msthash="607"><a href="http://hyfem.com/HyFem/fem.pdf" rel="nofollow" _istranslated="1">Introduction to the Finite Element Method（有限元方法简介</a>），作者：C.S. Jog</li>
+<li><a href="https://www.colorado.edu/engineering/CAS/courses.d/IFEM.d/" rel="nofollow" _msttexthash="24546626" _msthash="608">有限元方法简介</a> <code>Colorado.edu</code>
+<ul dir="auto">
+<li><a href="https://www.colorado.edu/engineering/CAS/courses.d/AFEM.d/Home.html" rel="nofollow" _msttexthash="7007403" _msthash="609">高级 FEM</a></li>
+<li><a href="https://www.colorado.edu/engineering/CAS/courses.d/NFEM.d/Home.html" rel="nofollow" _msttexthash="21957611" _msthash="610">非线性有限元</a></li>
+</ul>
+</li>
+<li _msttexthash="108660240" _msthash="611"><a href="https://femci.gsfc.nasa.gov/femcibook.html" rel="nofollow" _istranslated="1">有限元建模持续改进 </a>，（NASA FEMCI 书籍）</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h6 tabindex="-1" class="heading-element" dir="auto" _msttexthash="9238372" _msthash="612">好读物</h6><a id="user-content-good-reads" class="anchor" aria-label="永久链接：Good Reads" href="#good-reads" _mstaria-label="390637" _msthash="613"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="http://engineering.stackexchange.com/a/7326/2918" rel="nofollow" _msttexthash="36695217" _msthash="614">复杂几何域的网格划分</a> <code>stackexchange</code></li>
+<li><font _mstmutation="1" _msttexthash="145145624" _msthash="615"><a href="http://people.eecs.berkeley.edu/~jrs/papers/elemj.pdf" rel="nofollow" _mstmutation="1" _istranslated="1">什么是好的线性有限元？</a>作者：<a href="http://people.eecs.berkeley.edu/~jrs/" rel="nofollow" _mstmutation="1" _istranslated="1">J.R. Shewchuk</a> （2002）</font><code>Berkeley.edu</code></li>
+<li><a href="https://www.simscale.com/blog/2016/11/learn-finite-element-analysis-fea/" rel="nofollow" _msttexthash="66605136" _msthash="616">我怎样才能学习有限元分析？</a> <code>simscale</code></li>
+<li><a href="https://blog.pointwise.com/2017/11/29/why-cad-surface-geometry-is-inexact/" rel="nofollow" _msttexthash="59848698" _msthash="617">为什么 CAD 表面几何图形不精确</a> <code>pointwise</code></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="4704375" _msthash="618">法典</h4><a id="user-content-code" class="anchor" aria-label="永久链接： 代码" href="#code" _mstaria-label="238446" _msthash="619"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li _msttexthash="33780981" _msthash="620"><a href="https://www.dealii.org/" rel="nofollow" _istranslated="1">deal.II</a>（C++ 库）</li>
+<li _msttexthash="61599317" _msthash="621"><a href="https://fenicsproject.org/" rel="nofollow" _istranslated="1">FEniCS 项目</a>（C++ 和 Python 库）</li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_finite_element_software_packages" rel="nofollow" _msttexthash="10225657" _msthash="622">FE 包列表</a> <code>wikipedia</code></li>
+</ul>
+<hr>
+<div align="right" dir="auto">
+<p dir="auto"><sup><a href="#toc" _msttexthash="15341105" _msthash="623">返回页首</a></sup> ^</p>
 </div>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a name="user-content-software"></a><font _mstmutation="1" _msttexthash="7930286" _msthash="624">软件包</font></h2><a id="user-content-software-packages" class="anchor" aria-label="永久链接： 软件包" href="#software-packages" _mstaria-label="669968" _msthash="625"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><a name="user-content-for-fea"></a><font _mstmutation="1" _msttexthash="23640266" _msthash="626">用于有限元分析</font></h3><a id="user-content-for-finite-element-analysis" class="anchor" aria-label="永久链接：用于有限元分析" href="#for-finite-element-analysis" _mstaria-label="1065337" _msthash="627"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://www.code-aster.org/" rel="nofollow" _msttexthash="150150" _msthash="628">Code_Aster</a></li>
+<li><a href="http://www.calculix.de/" rel="nofollow" _msttexthash="18548738" _msthash="629">CalculiX 计算器</a></li>
+<li><a href="https://www.csc.fi/web/elmer" rel="nofollow" _msttexthash="9253673" _msthash="630">埃尔默</a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h6 tabindex="-1" class="heading-element" dir="auto" _msttexthash="13473265" _msthash="631">延伸阅读</h6><a id="user-content-further-reading" class="anchor" aria-label="永久链接：延伸阅读" href="#further-reading" _mstaria-label="595374" _msthash="632"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://github.com/qd-cae/awesome-CAE" _msttexthash="7257068" _msthash="633">太棒了-CAE</a> <code>github</code></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="6931665" _msthash="634">ANSYS公司</h4><a id="user-content-ansys" class="anchor" aria-label="永久链接： ANSYS" href="#ansys" _mstaria-label="245622" _msthash="635"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="466718031" _msthash="636"><a href="http://www.ansys.com/academic/free-student-products" rel="nofollow" _istranslated="1">学生版/免费版</a>：适用于任何能力和学习目的有限的人。该视频介绍了如何从 <a href="https://www.youtube.com/watch?v=rV-xr_D18hM" rel="nofollow" _istranslated="1">Ansys How To 官方频道下载和安装 ANSYS Student Release 17.2</a></p>
+<ul dir="auto">
+<li><a href="https://www.edx.org/course/hands-introduction-engineering-cornellx-engr2000x" rel="nofollow" _msttexthash="79060397" _msthash="637">EdX MOOC：工程仿真动手实践简介</a></li>
+<li><a href="http://www.mece.ualberta.ca/tutorials/ansys/" rel="nofollow" _msttexthash="32799260" _msthash="638">阿尔伯塔大学 - ANSYS 教程</a></li>
+<li><a href="https://confluence.cornell.edu/display/SIMULATION/ANSYS+Learning+Modules" rel="nofollow" _msttexthash="27527721" _msthash="639">康奈尔大学 - ANSYS 教程</a></li>
+<li><a href="http://www.ansys.com/products/academic/support-resources" rel="nofollow" _msttexthash="20488286" _msthash="640">Ansys 支持资源</a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="56017" _msthash="641">ABAQUS</h4><a id="user-content-abaqus" class="anchor" aria-label="永久链接： ABAQUS" href="#abaqus" _mstaria-label="260572" _msthash="642"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="107678506" _msthash="643"><a href="https://academy.3ds.com/en/software/abaqus-student-edition" rel="nofollow" _istranslated="1">学生版/免费版</a>：可用，1000 个节点限制。</p>
+<ul dir="auto">
+<li><a href="https://r1132100503382-eu1-3dswym.3dexperience.3ds.com/community/swym:prd:R1132100503382:community:39?content=swym%3Aprd%3AR1132100503382%3Awikitree%3AkMyiVKPMQw639V2kleOkNg" rel="nofollow" _msttexthash="124052201" _msthash="644">官方 Abaqus |学习资源（需要免费帐户）</a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="70096" _msthash="645">LS Dyna</h4><a id="user-content-ls-dyna" class="anchor" aria-label="永久链接： LS Dyna" href="#ls-dyna" _mstaria-label="288951" _msthash="646"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="228663695" _msthash="647">学生/免费版：<strong _istranslated="1">不可用</strong>，但可以以不到 150 美元的 AFAIK 获得学生许可证。</p>
+<ul dir="auto">
+<li><a href="http://www.dynaexamples.com/" rel="nofollow" _msttexthash="32762171" _msthash="648">LS Dyna 官方示例站点</a></li>
+<li><a href="http://www.lstc.com/lspp/content/tutorials.shtml" rel="nofollow" _msttexthash="12435215" _msthash="649">LS Prepost 教程</a></li>
+<li><a href="http://ftp.lstc.com/anonymous/outgoing/jday/faq/?C=M;O=D" rel="nofollow" _msttexthash="26176306" _msthash="650">Jim Day 常见问题</a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="7492173" _msthash="651">COMSOL 公司</h4><a id="user-content-comsol" class="anchor" aria-label="永久链接： COMSOL" href="#comsol" _mstaria-label="263900" _msthash="652"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="998026874" _msthash="653">Comsol 以前被称为 FEMLAB，是斯坦福大学的学术衍生公司。COMSOL 首次将多物理场仿真功能集成到商业软件包中，在许多非传统行业中非常受欢迎。</p>
+<p dir="auto" _msttexthash="51992278" _msthash="654">学生版/免费版：<strong _istranslated="1">不可用</strong>。</p>
+<ul dir="auto">
+<li><a href="https://www.comsol.com/blogs/" rel="nofollow" _msttexthash="7932743" _msthash="655">COMSOL 博客</a></li>
+<li><a href="https://www.comsol.com/papers-presentations" rel="nofollow" _msttexthash="55932318" _msthash="656">Comsol 技术论文和演示文稿</a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="67001727" _msthash="657">Hyperworks （Radioss， Optistruct）</h4><a id="user-content-hyperworks-radioss-optistruct" class="anchor" aria-label="永久链接：Hyperworks （Radioss， Optistruct）" href="#hyperworks-radioss-optistruct" _mstaria-label="1380210" _msthash="658"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="3037256612" _msthash="659">Hyperworks 是 Altair Engineering 提供的一套完整的商业 FEA 预处理、求解和后处理工具。旗舰产品是 Hypermesh - 一款在 CAE 行业广泛流行的网格划分软件，仅次于 Beta CAE Systems 的新进入者 ANSA 的挑战。Hyperworks 包含许多用于不同目的的软件，但最常用的软件是 Optistruct 和 Radioss 求解器以及 Hypermesh。</p>
+<p dir="auto" _msttexthash="119187809" _msthash="660"><a href="http://www.altairuniversity.com/hyperworks-licensing/" rel="nofollow" _istranslated="1">学生版/免费版</a>：仅适用于能力有限的学生。</p>
+<ul dir="auto">
+<li><a href="https://www.youtube.com/playlist?list=PLOahOE6DpL4puVylWdpHWRoGhIfswDc6T" rel="nofollow" _msttexthash="113793537" _msthash="661">HyperMesh 网格 |前处理 |2D |3D |网格划分 |安ANSYS |教程 |</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL1u26y75SCrBpe7SWbMEgOe0Ty3O7gPGS" rel="nofollow" _msttexthash="77382643" _msthash="662">HyperMesh &amp; Optistruct 解决教程 AOC-2016 竞赛</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL1u26y75SCrBHdDPaA2Thry6qwuSu2Uf_" rel="nofollow" _msttexthash="36522642" _msthash="663">Optistruct for Optimization AOC-2016 竞赛</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLrXG4nKgafb8IWo7q4fTXH5SX4TjsV0Pp" rel="nofollow" _msttexthash="6747845" _msthash="664">Anil Kumar 的 Optistruct</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLE4jpqcRJiBpJvHgHDmTZxi0J_RiXAz-6" rel="nofollow" _msttexthash="124989852" _msthash="665">Hyperworks Optistruct 教程（由 Manuel Ramsaier 提供）</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLRqUDK2aqvkDi21dCVdT0uJFTzslg67gz" rel="nofollow" _msttexthash="48433996" _msthash="666">Altair的HyperWorks提示和技巧</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLAsvHPJrmoWZNrnXYYLkvV2ElNe2g3zxX" rel="nofollow" _msttexthash="53754701" _msthash="667">Apoorv Bapat 的 Hypermesh 基础知识</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL86AF55AB0D9AA70C" rel="nofollow" _msttexthash="32307691" _msthash="668">TheScientifica 的 Hypermesh 教程</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLvVR-5zpzf0HQVpv3gs58U620ekf--IsJ" rel="nofollow" _msttexthash="7679763" _msthash="669">Fazle ahad 的 Hypermesh Tutorials Collections</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLJRDa46CU8JKZyLbEOxuACCbHi0_jk03X" rel="nofollow" _msttexthash="60340943" _msthash="670">SAEINDIA BAJA 2016 在线培训课程</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLJRDa46CU8JIch9nYk54DzrcyoRJgkQDl" rel="nofollow" _msttexthash="32771362" _msthash="671">防滚架的动力学分析</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLJRDa46CU8JLDsfzy0ZB06KLeIBKVi6Aw" rel="nofollow" _msttexthash="95842201" _msthash="672">SUPRA SAE India 2016 虚拟前在线培训课程</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLJRDa46CU8JLaBjaiwbePkUKJeSqQyA-P" rel="nofollow" _msttexthash="59461571" _msthash="673">印度学生方程式在线培训系列</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLJRDa46CU8JLLiGpLtlhkMSMDjTVzW_1r" rel="nofollow" _msttexthash="55372330" _msthash="674">BAJA Student India 在线培训系列</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLJRDa46CU8JIraHKqVbX5K2-nImf1UMHQ" rel="nofollow" _msttexthash="172060369" _msthash="675">Altair HyperWorks 在线培训系列 - 网格划分、分析和后处理</a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="14784510" _msthash="676">西姆斯卡尔</h4><a id="user-content-simscale" class="anchor" aria-label="永久链接： Simscale" href="#simscale" _mstaria-label="365014" _msthash="677"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<blockquote>
+<p dir="auto" _msttexthash="14549847" _msthash="678">网站： <a href="https://www.simscale.com/" rel="nofollow" _istranslated="1">https://www.simscale.com/</a></p>
+</blockquote>
+<p dir="auto" _msttexthash="10521329" _msthash="679">基于云的 FEA/CFD</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="318032" _msthash="680">Autodesk Moldflow</h4><a id="user-content-autodesk-moldflow" class="anchor" aria-label="永久链接： Autodesk Moldflow" href="#autodesk-moldflow" _mstaria-label="681577" _msthash="681"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://www.youtube.com/watch?v=XFN2EynTKbk" rel="nofollow" _msttexthash="108305444" _msthash="682">MoldFlow Insight 基础知识 （47 分钟）</a></li>
+<li><a href="https://www.youtube.com/watch?v=C7xeSyuMQXU" rel="nofollow" _msttexthash="92295840" _msthash="683">Moldflow Insight 快速入门网络研讨会</a></li>
+<li><a href="https://www.autodesk.com/campaigns/advmfg-summit/recordings/2024" rel="nofollow" _msttexthash="60077108" _msthash="684">MoldFlow 峰会录像 （2018-2024）</a></li>
+<li><a href="https://forums.autodesk.com/t5/moldflow-insight-forum/bd-p/366" rel="nofollow" _msttexthash="17199468" _msthash="685">MoldFlow Insight 论坛</a></li>
+<li><a href="https://www.autodesk.com/support/technical/product/moldflow-insight" rel="nofollow" _msttexthash="27313559" _msthash="686">MoldFlow Insight 知识库</a></li>
+<li><a href="https://www.autodesk.com/autodesk-university/search?fields.product=Moldflow+Insight" rel="nofollow" _msttexthash="35244053" _msthash="687">MoldFlow Insight - 官方讲座</a></li>
+<li><a href="https://www.autodesk.com/industry/manufacturing/simulation-hub/resources?products=--autodesk-moldflow" rel="nofollow" _msttexthash="37187124" _msthash="688">MoldFlow Insight 验证报告</a></li>
+<li><a href="https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/Moldflow-training-videos-to-build-simulation-knowledge-and-understanding.html" rel="nofollow" _msttexthash="150092774" _msthash="689">Moldflow 培训视频，用于构建仿真知识和理解。</a></li>
+<li><a href="https://www.youtube.com/@PrakashCheyyar" rel="nofollow" _msttexthash="9488063" _msthash="690">YT 通道 - MoldFlow Videos</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLIv6vwn776aTRDFm3QQNShjmhJrdJ5GaN" rel="nofollow" _msttexthash="54531074" _msthash="691">YT 播放列表 - Moldflow Monday 培训内容</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL8HJ5sUh-AP4Z0YhwuZ20hxKFrEXfiB7b" rel="nofollow" _msttexthash="72351266" _msthash="692">YT 播放列表 - Moldflow 培训快速入门</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLIv6vwn776aQzty-V81k9l4453VyxrUql" rel="nofollow" _msttexthash="15331706" _msthash="693">YT 播放列表 - Autodesk Moldflow</a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="7512258" _msthash="694">Moldex 公司</h4><a id="user-content-moldex" class="anchor" aria-label="永久链接： Moldex" href="#moldex" _mstaria-label="304265" _msthash="695"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><a name="user-content-for-control"></a><font _mstmutation="1" _msttexthash="18852678" _msthash="696">用于控制工程</font></h3><a id="user-content-for-control-engineering" class="anchor" aria-label="永久链接： 用于控制工程" href="#for-control-engineering" _mstaria-label="911222" _msthash="697"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h6 tabindex="-1" class="heading-element" dir="auto" _msttexthash="53066" _msthash="698">MATLAB</h6><a id="user-content-matlab-1" class="anchor" aria-label="永久链接： MATLAB" href="#matlab-1" _mstaria-label="256061" _msthash="699"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="http://ctms.engin.umich.edu/CTMS/index.php?aux=Home" rel="nofollow" _msttexthash="45767670" _msthash="700">MATLAB 和 Simulink 的控制教程</a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="13670176" _msthash="701">用于机器人</h3><a id="user-content-for-robotics" class="anchor" aria-label="永久链接： For Robotics" href="#for-robotics" _mstaria-label="473291" _msthash="702"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h6 tabindex="-1" class="heading-element" dir="auto" _msttexthash="3969589" _msthash="703">ROS的</h6><a id="user-content-ros" class="anchor" aria-label="永久链接：ROS" href="#ros" _mstaria-label="203814" _msthash="704"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://www.packtpub.com/hardware-and-creative/learning-ros-robotics-programming-second-edition" rel="nofollow" _msttexthash="39356304" _msthash="705">学习用于机器人编程的 ROS</a></li>
+<li><a href="https://www.packtpub.com/hardware-and-creative/mastering-ros-robotics-programming" rel="nofollow" _msttexthash="44467553" _msthash="706">掌握 ROS 进行机器人编程</a></li>
+<li><a href="https://www.packtpub.com/application-development/learning-robotics-using-python" rel="nofollow" _msttexthash="43565431" _msthash="707">使用 Python 学习机器人技术</a></li>
+<li><a href="https://www.packtpub.com/hardware-and-creative/ros-robotics-example" rel="nofollow" _msttexthash="12465180" _msthash="708">ROS Robotics 示例</a></li>
+<li><a href="https://wolfv.medium.com/ros-on-conda-forge-dca6827ac4b6" rel="nofollow" _msttexthash="44480956" _msthash="709">“ROS on conda-forge” 作者：@wolfv</a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><a name="user-content-for-cad"></a><font _mstmutation="1" _msttexthash="13231270" _msthash="710">用于 CAD 建模</font></h3><a id="user-content-for-cad-modeling" class="anchor" aria-label="永久链接： 用于 CAD 建模" href="#for-cad-modeling" _mstaria-label="552981" _msthash="711"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="7824557" _msthash="712">卡蒂亚</h4><a id="user-content-catia" class="anchor" aria-label="永久链接：CATIA" href="#catia" _mstaria-label="234195" _msthash="713"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/451e0a53d0efafb2b8aaa41d81e66d1838ecb10a8878c90e75454bf1054d10cc/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f362f36302f44532d43415449412d4c6f676f2e706e67"><img src="https://camo.githubusercontent.com/451e0a53d0efafb2b8aaa41d81e66d1838ecb10a8878c90e75454bf1054d10cc/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f362f36302f44532d43415449412d4c6f676f2e706e67" width="64" align="right" data-canonical-src="https://upload.wikimedia.org/wikipedia/commons/6/60/DS-CATIA-Logo.png" style="max-width: 100%;"></a></p>
+<blockquote>
+<p dir="auto" _msttexthash="15604602" _msthash="714">网站： <a href="https://www.3ds.com/products-services/catia/" rel="nofollow" _istranslated="1">https://www.3ds.com/products-services/catia/</a></p>
+<p dir="auto"><font _mstmutation="1" _msttexthash="62308337" _msthash="715"><a href="https://academy.3ds.com/en/software/catia-v5-student-edition" rel="nofollow" _mstmutation="1" _istranslated="1">学生版</a>至 11 月 26 日。<em _mstmutation="1" _istranslated="1">优惠码</em>：</font><code>CATIA4FREE17</code></p>
+</blockquote>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="6491615" _msthash="716">NX 系列</h4><a id="user-content-nx" class="anchor" aria-label="永久链接：NX" href="#nx" _mstaria-label="184535" _msthash="717"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="22877075" _msthash="718"><em _istranslated="1">以前称为</em>Unigraphics的。</p>
+<blockquote>
+<p dir="auto" _msttexthash="16368248" _msthash="719">网站： <a href="https://www.plm.automation.siemens.com/en/products/nx/" rel="nofollow" _istranslated="1">https://www.plm.automation.siemens.com/en/products/nx/</a></p>
+<p dir="auto" _msttexthash="17189653" _msthash="720">学生版：<em _istranslated="1">N/A</em></p>
+</blockquote>
+<ul dir="auto">
+<li><a href="https://www.plm.automation.siemens.com/en/academic/resources/nx/index.shtml" rel="nofollow" _msttexthash="7926958" _msthash="721">NX 资源</a> <code>Siemens</code></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="29066869" _msthash="722">Creo （微小）</h4><a id="user-content-creo" class="anchor" aria-label="永久链接： Creo" href="#creo" _mstaria-label="241995" _msthash="723"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/1ea854b8a675c9837025a4a90f322f25ae746774c88fadb8cb65b57519266bc6/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f302f30622f5054435f4372656f2e706e67"><img src="https://camo.githubusercontent.com/1ea854b8a675c9837025a4a90f322f25ae746774c88fadb8cb65b57519266bc6/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f302f30622f5054435f4372656f2e706e67" width="64" align="right" data-canonical-src="https://upload.wikimedia.org/wikipedia/commons/0/0b/PTC_Creo.png" style="max-width: 100%;"></a></p>
+<p dir="auto" _msttexthash="10496993" _msthash="724"><em _istranslated="1">以前称为</em>Pro/ENGINEER.</p>
+<blockquote>
+<p dir="auto" _msttexthash="14340105" _msthash="725">网站： <a href="https://www.ptc.com/" rel="nofollow" _istranslated="1">https://www.ptc.com/</a></p>
+<p dir="auto" _msttexthash="20469150" _msthash="726">学生版：<a href="https://www.ptc.com/en/academic-program/products/free-software" rel="nofollow" _istranslated="1">https://www.ptc.com/en/academic-program/products/free-software</a></p>
+</blockquote>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="9794135" _msthash="727">SolidWorks 公司</h4><a id="user-content-solidworks" class="anchor" aria-label="永久链接：SolidWorks" href="#solidworks" _mstaria-label="439582" _msthash="728"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/8e6ef9a542859031e4cb91ba3f62004459a8499922bd35ef16f19e3b64da43a7/68747470733a2f2f7777772e736f6c6964776f726b732e636f6d2f73772f696d616765732f636f6e74656e742f536f6c6964576f726b735f4c6f676f747970655f434d594b5f5265642e626d70"><img src="https://camo.githubusercontent.com/8e6ef9a542859031e4cb91ba3f62004459a8499922bd35ef16f19e3b64da43a7/68747470733a2f2f7777772e736f6c6964776f726b732e636f6d2f73772f696d616765732f636f6e74656e742f536f6c6964576f726b735f4c6f676f747970655f434d594b5f5265642e626d70" width="128" align="right" data-canonical-src="https://www.solidworks.com/sw/images/content/SolidWorks_Logotype_CMYK_Red.bmp" style="max-width: 100%;"></a></p>
+<blockquote>
+<p dir="auto" _msttexthash="14660919" _msthash="729">网站： <a href="https://www.solidworks.com/" rel="nofollow" _istranslated="1">https://www.solidworks.com/</a></p>
+<p dir="auto"><font _mstmutation="1" _msttexthash="42407859" _msthash="730">学生版：<a href="https://www.solidworks.com/sw/educator-evaulation-request.htm" rel="nofollow" _mstmutation="1" _istranslated="1">请求</a>（<em _mstmutation="1" _istranslated="1">60 天</em></font>)</p>
+</blockquote>
+<ul dir="auto">
+<li><a href="http://www.solidworks.com/sw/resources/solidworks-tutorials.htm" rel="nofollow" _msttexthash="14777919" _msthash="731">Solidworks 资源</a> <code>Solidworks</code></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="125788" _msthash="732">Solid Edge</h4><a id="user-content-solid-edge" class="anchor" aria-label="永久链接：Solid Edge" href="#solid-edge" _mstaria-label="386893" _msthash="733"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<blockquote>
+<p dir="auto" _msttexthash="17035889" _msthash="734">网站： <a href="https://www.plm.automation.siemens.com/it/products/solid-edge/" rel="nofollow" _istranslated="1">https://www.plm.automation.siemens.com/it/products/solid-edge/</a></p>
+<p dir="auto"><font _mstmutation="1" _msttexthash="42408470" _msthash="735">学生版：<a href="https://www.plm.automation.siemens.com/plmapp/se/en_US/online/Shop#ACTION=1189811524" rel="nofollow" _mstmutation="1" _istranslated="1">请求</a>（<em _mstmutation="1" _istranslated="1">45 天</em></font>)</p>
+</blockquote>
+<ul dir="auto">
+<li><a href="https://community.plm.automation.siemens.com/t5/Solid-Edge/ct-p/solid-edge" rel="nofollow" _msttexthash="13903084" _msthash="736">Solid Edge 资源</a> <code>Siemens</code></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="10260718" _msthash="737">OnShape 形状</h4><a id="user-content-onshape" class="anchor" aria-label="永久链接：OnShape" href="#onshape" _mstaria-label="326157" _msthash="738"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<blockquote>
+<p dir="auto" _msttexthash="14507103" _msthash="739">网站： <a href="https://www.onshape.com/" rel="nofollow" _istranslated="1">https://www.onshape.com/</a></p>
+</blockquote>
+<p dir="auto" _msttexthash="10469576" _msthash="740">基于云的 CAD</p>
+<div class="markdown-heading" dir="auto"><h6 tabindex="-1" class="heading-element" dir="auto" _msttexthash="5156736" _msthash="741">开源</h6><a id="user-content-opensource" class="anchor" aria-label="永久链接： OpenSource" href="#opensource" _mstaria-label="435188" _msthash="742"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="74386" _msthash="743">FreeCAD</h4><a id="user-content-freecad" class="anchor" aria-label="永久链接： FreeCAD" href="#freecad" _mstaria-label="297271" _msthash="744"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/88a7da8fb4abc406972aa16c1cfc7f12071942c33e3bd85e77bde224bcc61ad3/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f362f36642f467265654341443031362d6c6f676f2e737667"><img src="https://camo.githubusercontent.com/88a7da8fb4abc406972aa16c1cfc7f12071942c33e3bd85e77bde224bcc61ad3/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f362f36642f467265654341443031362d6c6f676f2e737667" width="64" align="right" data-canonical-src="https://upload.wikimedia.org/wikipedia/commons/6/6d/FreeCAD016-logo.svg" style="max-width: 100%;"></a></p>
+<blockquote>
+<p dir="auto" _msttexthash="14638988" _msthash="745">网站： <a href="https://www.freecadweb.org/" rel="nofollow" _istranslated="1">https://www.freecadweb.org/</a></p>
+</blockquote>
+<p dir="auto" _msttexthash="10108605" _msthash="746"><em _istranslated="1">几何内核</em> <a href="https://github.com/tpaviot/oce" _istranslated="1">OpenCASCADE</a></p>
+<ul dir="auto">
+<li><a href="https://www.gitbook.com/book/yorikvanhavre/a-freecad-manual/details" rel="nofollow" _msttexthash="8724872" _msthash="747">FreeCAD 手册</a> <code>GitBook</code></li>
+<li><font _mstmutation="1" _msttexthash="223594280" _msthash="748"><a href="https://github.com/jmwright/cadquery-freecad-module" _mstmutation="1" _istranslated="1">CadQuery Plugin for FreeCAD</a>，用于构建参数模型的基于 python 的语言 [<a href="https://github.com/jmwright/cadquery-freecad-module/wiki" _mstmutation="1" _istranslated="1">Wiki</a></font>]
+<ul dir="auto">
+<li><a href="http://dcowden.github.io/cadquery/" rel="nofollow" _msttexthash="10738819" _msthash="749">CadQuery 文档</a></li>
+</ul>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="90636" _msthash="750">OpenSCAD</h4><a id="user-content-openscad" class="anchor" aria-label="永久链接：OpenSCAD" href="#openscad" _mstaria-label="326391" _msthash="751"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<blockquote>
+<p dir="auto" _msttexthash="14507311" _msthash="752">网站： <a href="http://www.openscad.org/" rel="nofollow" _istranslated="1">http://www.openscad.org/</a></p>
+</blockquote>
+<p dir="auto" _msttexthash="28190357" _msthash="753">基于脚本的建模器</p>
+<p dir="auto" _msttexthash="10125999" _msthash="754"><em _istranslated="1">几何内核</em> <a href="http://opencsg.org/" rel="nofollow" _istranslated="1">OpenCSG</a> + <a href="https://www.cgal.org/" rel="nofollow" _istranslated="1">CGAL</a></p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="74283521" _msthash="755">BRL-CAD （巴西雷亚尔-加元）</h4><a id="user-content-brl-cad" class="anchor" aria-label="永久链接： BRL-CAD" href="#brl-cad" _mstaria-label="268164" _msthash="756"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<blockquote>
+<p dir="auto" _msttexthash="14266668" _msthash="757">网站： <a href="http://brlcad.org/" rel="nofollow" _istranslated="1">http://brlcad.org/</a></p>
+</blockquote>
+<details><summary><b _msttexthash="10107149" _msthash="758">即将推出</b></summary>
 
-## <a name="software"></a>Software Packages
-### <a name="for-fea"></a>For Finite Element Analysis
-* [Code_Aster](https://www.code-aster.org/)
-* [CalculiX](http://www.calculix.de/)
-* [Elmer](https://www.csc.fi/web/elmer)
-
-###### Further reading
-* [awesome-CAE](https://github.com/qd-cae/awesome-CAE) `github`
-
-#### ANSYS
-[Student/Free version](http://www.ansys.com/academic/free-student-products): Available for anyone with limited capability and usage for learning purpose. This is a video explaining how to [download and install ANSYS Student Release 17.2 from Ansys How To official channel](https://www.youtube.com/watch?v=rV-xr_D18hM)
-
-* [EdX MOOC A Hands-on Introduction to Engineering Simulations](https://www.edx.org/course/hands-introduction-engineering-cornellx-engr2000x)
-* [University of Alberta - ANSYS Tutorials](http://www.mece.ualberta.ca/tutorials/ansys/)
-* [Cornell University- ANSYS Tutorials](https://confluence.cornell.edu/display/SIMULATION/ANSYS+Learning+Modules)
-* [Ansys Support Resources](http://www.ansys.com/products/academic/support-resources)
-
-#### ABAQUS
-[Student/Free version](https://academy.3ds.com/en/software/abaqus-student-edition): Available, 1000 nodes limit.
-
-* [Official Abaqus | Learning Resources (requires free account)](https://r1132100503382-eu1-3dswym.3dexperience.3ds.com/community/swym:prd:R1132100503382:community:39?content=swym%3Aprd%3AR1132100503382%3Awikitree%3AkMyiVKPMQw639V2kleOkNg)
-
-#### LS Dyna
-Student/Free version: **Not available** but a student license can be obtained for less than $150 AFAIK.
-
-* [LS Dyna Official Examples Site](http://www.dynaexamples.com/)
-* [LS Prepost Tutorials](http://www.lstc.com/lspp/content/tutorials.shtml)
-* [Jim Day FAQ](http://ftp.lstc.com/anonymous/outgoing/jday/faq/?C=M;O=D)
-
-#### COMSOL
-Comsol was known as FEMLAB before and is a academic spin-off from Stanford University. Comsol integrated multiphysics simulation capability for the first time in a commercial package and is pretty popular in many unconventional industry.
-
-Student/Free version: **Not available**.
-
-* [Comsol Blog](https://www.comsol.com/blogs/)
-* [Comsol Technical Papers and Presentations](https://www.comsol.com/papers-presentations)
-
-
-#### Hyperworks (Radioss, Optistruct)
-Hyperworks is a complete commercial suite of Preprocessing, Solving, and Postprocessing tools for FEA by Altair Engineering. The flagship product is Hypermesh - a meshing software widely popular in CAE industry only challenged by ANSA, a new entrant from Beta CAE Systems. Hyperworks includes many software for different purposes though the mostly used ones are Optistruct and Radioss solvers besides Hypermesh.
-
-[Student/Free version](http://www.altairuniversity.com/hyperworks-licensing/): Available only for students with limited capability.
-
-* [HyperMesh | Pre processing | 2D | 3D | Meshing | ANSYS | Tutorial |](https://www.youtube.com/playlist?list=PLOahOE6DpL4puVylWdpHWRoGhIfswDc6T)
-* [HyperMesh & Optistruct Solved Tutorials AOC-2016 Contest](https://www.youtube.com/playlist?list=PL1u26y75SCrBpe7SWbMEgOe0Ty3O7gPGS)
-* [Optistruct for Optimization AOC-2016 Contest](https://www.youtube.com/playlist?list=PL1u26y75SCrBHdDPaA2Thry6qwuSu2Uf_)
-* [Optistruct by Anil Kumar](https://www.youtube.com/playlist?list=PLrXG4nKgafb8IWo7q4fTXH5SX4TjsV0Pp)
-* [Hyperworks Optistruct Tutorials by Manuel Ramsaier](https://www.youtube.com/playlist?list=PLE4jpqcRJiBpJvHgHDmTZxi0J_RiXAz-6)
-* [HyperWorks Tips & Tricks by Altair](https://www.youtube.com/playlist?list=PLRqUDK2aqvkDi21dCVdT0uJFTzslg67gz)
-* [Hypermesh basics by Apoorv Bapat](https://www.youtube.com/playlist?list=PLAsvHPJrmoWZNrnXYYLkvV2ElNe2g3zxX)
-* [Hypermesh Tutorial by TheScientifica](https://www.youtube.com/playlist?list=PL86AF55AB0D9AA70C)
-* [Hypermesh Tutorials Collections by Fazle ahad](https://www.youtube.com/playlist?list=PLvVR-5zpzf0HQVpv3gs58U620ekf--IsJ)
-* [SAEINDIA BAJA 2016 Online Training Session](https://www.youtube.com/playlist?list=PLJRDa46CU8JKZyLbEOxuACCbHi0_jk03X)
-* [Dynamic Analysis of Roll Cage](https://www.youtube.com/playlist?list=PLJRDa46CU8JIch9nYk54DzrcyoRJgkQDl)
-* [SUPRA SAE India 2016 Pre-virtual online Training Session](https://www.youtube.com/playlist?list=PLJRDa46CU8JLDsfzy0ZB06KLeIBKVi6Aw)
-* [Formula Student India Online Training Series](https://www.youtube.com/playlist?list=PLJRDa46CU8JLaBjaiwbePkUKJeSqQyA-P)
-* [BAJA Student India Online Training Series](https://www.youtube.com/playlist?list=PLJRDa46CU8JLLiGpLtlhkMSMDjTVzW_1r)
-* [Altair HyperWorks Online Training series - Meshing, Analysis & Post-processing](https://www.youtube.com/playlist?list=PLJRDa46CU8JIraHKqVbX5K2-nImf1UMHQ)
-
-#### Simscale
->Website: [https://www.simscale.com/](https://www.simscale.com/)
-
-Cloud based FEA/CFD
-
-#### Autodesk Moldflow
-* [MoldFlow Insight Fundamentals (47min)](https://www.youtube.com/watch?v=XFN2EynTKbk)
-* [Moldflow Insight Quick Start Webinar](https://www.youtube.com/watch?v=C7xeSyuMQXU)
-* [MoldFlow Summit Recordings (2018-2024)](https://www.autodesk.com/campaigns/advmfg-summit/recordings/2024)
-* [MoldFlow Insight Forum](https://forums.autodesk.com/t5/moldflow-insight-forum/bd-p/366)
-* [MoldFlow Insight Knowledge Base](https://www.autodesk.com/support/technical/product/moldflow-insight)
-* [MoldFlow Insight - Official Talks](https://www.autodesk.com/autodesk-university/search?fields.product=Moldflow+Insight)
-* [MoldFlow Insight Validation Reports](https://www.autodesk.com/industry/manufacturing/simulation-hub/resources?products=--autodesk-moldflow)
-* [Moldflow training videos to build simulation knowledge and understanding.](https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/Moldflow-training-videos-to-build-simulation-knowledge-and-understanding.html)
-* [YT Channel - MoldFlow Videos](https://www.youtube.com/@PrakashCheyyar)
-* [YT Playlist -  Moldflow Monday Training Content ](https://www.youtube.com/playlist?list=PLIv6vwn776aTRDFm3QQNShjmhJrdJ5GaN)
-* [YT Playlist -  Getting Started with Moldflow Training ](https://www.youtube.com/playlist?list=PL8HJ5sUh-AP4Z0YhwuZ20hxKFrEXfiB7b)
-* [YT Playlist -  Autodesk Moldflow ](https://www.youtube.com/playlist?list=PLIv6vwn776aQzty-V81k9l4453VyxrUql)
-
-#### Moldex 
-
-### <a name="for-control"></a>For Control Engineering
-###### MATLAB
-* [Control Tutorials for MATLAB and Simulink](http://ctms.engin.umich.edu/CTMS/index.php?aux=Home)
-
-### For Robotics
-###### ROS
-* [Learning ROS for Robotics Programming ](https://www.packtpub.com/hardware-and-creative/learning-ros-robotics-programming-second-edition)
-* [Mastering ROS for Robotics Programming ](https://www.packtpub.com/hardware-and-creative/mastering-ros-robotics-programming)
-* [Learning Robotics Using Python ](https://www.packtpub.com/application-development/learning-robotics-using-python)
-* [ROS Robotics By Example ](https://www.packtpub.com/hardware-and-creative/ros-robotics-example)
-* ["ROS on conda-forge" by @wolfv ](https://wolfv.medium.com/ros-on-conda-forge-dca6827ac4b6)
-
-### <a name="for-cad"></a>For CAD Modeling
-#### CATIA
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/60/DS-CATIA-Logo.png" width="64" align="right" />
-
->Website: [https://www.3ds.com/products-services/catia/](https://www.3ds.com/products-services/catia/)
->
->[Student Edition](https://academy.3ds.com/en/software/catia-v5-student-edition) until Nov. 26th.
->*Promo code*: `CATIA4FREE17`
-
-
-#### NX
-
-*Formely known as* Unigraphics.
-
->Website: [https://www.plm.automation.siemens.com/en/products/nx/](https://www.plm.automation.siemens.com/en/products/nx/)
->
->Student Edition: *N/A*
-
-* [NX Resources](https://www.plm.automation.siemens.com/en/academic/resources/nx/index.shtml) `Siemens`
-
-
-#### Creo
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/PTC_Creo.png" width="64" align="right" />
-
-*Formerly known as* Pro/ENGINEER.
->Website: [https://www.ptc.com/](https://www.ptc.com/)
->
->Student Edition: [https://www.ptc.com/en/academic-program/products/free-software](https://www.ptc.com/en/academic-program/products/free-software) 
-
-
-#### SolidWorks
-
-<img src="https://www.solidworks.com/sw/images/content/SolidWorks_Logotype_CMYK_Red.bmp" width="128" align="right" />
-
->Website: [https://www.solidworks.com/](https://www.solidworks.com/)
->
->Student Edition: [request](https://www.solidworks.com/sw/educator-evaulation-request.htm) (*60 Days*)
-
- * [Solidworks Resources](http://www.solidworks.com/sw/resources/solidworks-tutorials.htm) `Solidworks`
-
-
-#### Solid Edge
-
->Website: [https://www.plm.automation.siemens.com/it/products/solid-edge/](https://www.plm.automation.siemens.com/it/products/solid-edge/)
->
->Student Edition: [request](https://www.plm.automation.siemens.com/plmapp/se/en_US/online/Shop#ACTION=1189811524) (*45 Days*)
-
-* [Solid Edge Resources](https://community.plm.automation.siemens.com/t5/Solid-Edge/ct-p/solid-edge) `Siemens`
-
-
-#### OnShape
->Website: [https://www.onshape.com/](https://www.onshape.com/)
-
-Cloud Based CAD
-
-###### OpenSource
-
-#### FreeCAD
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/FreeCAD016-logo.svg" width="64" align="right" />
-
->Website: [https://www.freecadweb.org/](https://www.freecadweb.org/)
-
-*Geometric Kernel* [OpenCASCADE](https://github.com/tpaviot/oce)
-
-* [A FreeCAD manual](https://www.gitbook.com/book/yorikvanhavre/a-freecad-manual/details) `GitBook`
-* [CadQuery Plugin for FreeCAD](https://github.com/jmwright/cadquery-freecad-module), python based language for building parametric models [[Wiki](https://github.com/jmwright/cadquery-freecad-module/wiki)]
-  * [CadQuery Documentation](http://dcowden.github.io/cadquery/)
-
-
-#### OpenSCAD
->Website: [http://www.openscad.org/](http://www.openscad.org/)
-
-Script based modeller
-
-*Geometric Kernel* [OpenCSG](http://opencsg.org/) + [CGAL](https://www.cgal.org/)
-
-#### BRL-CAD
->Website: [http://brlcad.org/](http://brlcad.org/)
-
-<details><summary><b>Coming Soon</b></summary>
-<!-- Empty sections Bloat: move out when ready  -->
-
-
-#### SpaceClaim
-
-#### AutoCAD
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="13789360" _msthash="759">太空索赔</h4><a id="user-content-spaceclaim" class="anchor" aria-label="永久链接：SpaceClaim" href="#spaceclaim" _mstaria-label="421213" _msthash="760"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="5599178" _msthash="761">AutoCAD 的</h4><a id="user-content-autocad" class="anchor" aria-label="永久链接：AutoCAD" href="#autocad" _mstaria-label="303173" _msthash="762"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
 </details>
-<details><summary><b>Surface Modelling</b></summary>
-
-#### Blender
-
-#### SketchUp
-
-#### Rhinoceros 3D
+<details><summary><b _msttexthash="12805338" _msthash="763">曲面建模</b></summary>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="7387029" _msthash="764">混合器</h4><a id="user-content-blender" class="anchor" aria-label="永久链接： Blender" href="#blender" _mstaria-label="330382" _msthash="765"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="6734533" _msthash="766">速绘</h4><a id="user-content-sketchup" class="anchor" aria-label="永久链接：SketchUp" href="#sketchup" _mstaria-label="362323" _msthash="767"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="5726799" _msthash="768">犀牛 3D</h4><a id="user-content-rhinoceros-3d" class="anchor" aria-label="永久链接： Rhinoceros 3D" href="#rhinoceros-3d" _mstaria-label="485680" _msthash="769"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
 </details>
-
----
-<div align="right">
-
-<sup>[Back to Top](#toc)</sup> &Hat;
+<hr>
+<div align="right" dir="auto">
+<p dir="auto"><sup><a href="#toc" _msttexthash="15341105" _msthash="770">返回页首</a></sup> ^</p>
 </div>
-
-## <a name="subreddits"></a> SubReddits Related to Mechanical Engineering
-* [/r/AskEngineers](https://www.reddit.com/r/AskEngineers/): Non-school Q&A
-* [/r/CAD](https://www.reddit.com/r/CAD/): Computer Aided Design
-* [/r/CFD](https://www.reddit.com/r/CFD/): Computational Fluid Dynamics
-* [/r/Engineering](https://www.reddit.com/r/engineering/): About all things related to engineering
-* [/r/EngineeringStudents](https://www.reddit.com/r/EngineeringStudents/): For wee engineerlings
-* [/r/FEA](https://www.reddit.com/r/fea/): Finite Element Analysis
-* [/r/FluidMechanics](https://www.reddit.com/r/FluidMechanics/)
-* [/r/CivilEngineering](https://www.reddit.com/r/civilengineering/): Civil Engineering
-* [/r/Manufacturing](https://www.reddit.com/r/Manufacturing/): Manufacturing Industry
-* [/r/Materials](https://www.reddit.com/r/materials/): Materials Engineering
-* [/r/MechanicalEngineering](https://www.reddit.com/r/mechanicalengineering/): Mechanical Engineering
-
-Misc
-
-* [/r/EngineeringPorn](https://www.reddit.com/r/EngineeringPorn/): porn for engineers (*safe for work*)
-* [/r/Mechanical_gifs](https://www.reddit.com/r/mechanical_gifs/): perfect loops of mechanical things
-* [/r/SpecializedTools](https://www.reddit.com/r/specializedtools/)
-* [/r/MachinePorn](https://www.reddit.com/r/MachinePorn/)
-* [/r/ToolPorn](https://www.reddit.com/r/toolporn/)
-* [/r/ThingsCutInHalfPorn](https://www.reddit.com/r/ThingsCutInHalfPorn/)
-
-<details><summary>Other</summary><br/>
-
-  * [/r/Aerospace](https://www.reddit.com/r/aerospace/): Aerospace Engineering
-  * [/r/AskElectronics](https://www.reddit.com/r/AskElectronics/): CE/EE Q&A
-  * [/r/AskScience](https://www.reddit.com/r/AskScience/): No-nonsense science Q&A
-  * [/r/BioEngineering](https://www.reddit.com/r/BioEngineering/): Biological
-  * [/r/Biology](https://www.reddit.com/r/biology/)
-  * [/r/Biotech](https://www.reddit.com/r/biotech/): Biotechnology
-  * [/r/ChemE](https://www.reddit.com/r/chemicalengineering/): Chemical Engineering
-  * [/r/Chemistry](https://www.reddit.com/r/chemistry/)
-  * [/r/Coding](https://www.reddit.com/r/coding/)
-  * [/r/ComputerScience](https://www.reddit.com/r/ComputerScience/)
-  * [/r/Construction](https://www.reddit.com/r/construction/): Construction
-  * [/r/CSBooks](https://www.reddit.com/r/csbooks/): Computer Science
-  * [/r/ECE](https://www.reddit.com/r/ECE/): General EE & CE discussion
-  * [/r/ECEComponentExchange](https://www.reddit.com/r/ECEComponentExchange/): Parts swap
-  * [/r/EE](https://www.reddit.com/r/electricalengineering/): Electrical Engineering
-  * [/r/EEBooks](https://www.reddit.com/r/eebooks/): Electrical Engineering
-  * [/r/Electronics](https://www.reddit.com/r/electronics/)
-  * [/r/Lectures](https://www.reddit.com/r/lectures/)
-  * [/r/Math](https://www.reddit.com/r/math/)
-  * [/r/MathBooks](https://www.reddit.com/r/mathbooks/): Mathematics
-  * [/r/Physics](https://www.reddit.com/r/physics/)
-  * [/r/PhysicsBooks](https://www.reddit.com/r/physicsbooks/): Physics
-  * [/r/Programming](https://www.reddit.com/r/programming/)
-  * [/r/Science](https://www.reddit.com/r/science/)
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a name="user-content-subreddits"></a><font _mstmutation="1" _msttexthash="29315988" _msthash="771">与机械工程相关的 SubReddit</font></h2><a id="user-content--subreddits-related-to-mechanical-engineering" class="anchor" aria-label="永久链接：与机械工程相关的 SubReddit" href="#-subreddits-related-to-mechanical-engineering" _mstaria-label="2089802" _msthash="772"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li _msttexthash="70553106" _msthash="773"><a href="https://www.reddit.com/r/AskEngineers/" rel="nofollow" _istranslated="1">/r/AskEngineers</a>： 非学校问答</li>
+<li _msttexthash="60460075" _msthash="774"><a href="https://www.reddit.com/r/CAD/" rel="nofollow" _istranslated="1">/r/CAD</a>：计算机辅助设计</li>
+<li _msttexthash="50326497" _msthash="775"><a href="https://www.reddit.com/r/CFD/" rel="nofollow" _istranslated="1">/r/CFD：</a>计算流体动力学</li>
+<li _msttexthash="123805279" _msthash="776"><a href="https://www.reddit.com/r/engineering/" rel="nofollow" _istranslated="1">/r/Engineering</a>：关于与工程相关的所有事情</li>
+<li _msttexthash="93064530" _msthash="777"><a href="https://www.reddit.com/r/EngineeringStudents/" rel="nofollow" _istranslated="1">/r/EngineeringStudents</a>：适合小工程师</li>
+<li _msttexthash="38563057" _msthash="778"><a href="https://www.reddit.com/r/fea/" rel="nofollow" _istranslated="1">/r/FEA</a>：有限元分析</li>
+<li><a href="https://www.reddit.com/r/FluidMechanics/" rel="nofollow" _msttexthash="77203503" _msthash="779">/r/FluidMechanics （流体力学）</a></li>
+<li _msttexthash="61158643" _msthash="780"><a href="https://www.reddit.com/r/civilengineering/" rel="nofollow" _istranslated="1">/r/CivilEngineering</a>： 土木工程</li>
+<li _msttexthash="37373362" _msthash="781"><a href="https://www.reddit.com/r/Manufacturing/" rel="nofollow" _istranslated="1">/r/制造业</a>： 制造业</li>
+<li _msttexthash="37756004" _msthash="782"><a href="https://www.reddit.com/r/materials/" rel="nofollow" _istranslated="1">/r/材料</a>： 材料工程</li>
+<li _msttexthash="74229935" _msthash="783"><a href="https://www.reddit.com/r/mechanicalengineering/" rel="nofollow" _istranslated="1">/r/MechanicalEngineering</a>： 机械工程</li>
+</ul>
+<p dir="auto" _msttexthash="6464926" _msthash="784">杂项</p>
+<ul dir="auto">
+<li><font _mstmutation="1" _msttexthash="206614018" _msthash="785"><a href="https://www.reddit.com/r/EngineeringPorn/" rel="nofollow" _mstmutation="1" _istranslated="1">/r/EngineeringPorn</a>：工程师的色情内容（<em _mstmutation="1" _istranslated="1">工作安全</em>）</font>)</li>
+<li _msttexthash="116742080" _msthash="786"><a href="https://www.reddit.com/r/mechanical_gifs/" rel="nofollow" _istranslated="1">/r/Mechanical_gifs</a>：机械事物的完美循环</li>
+<li><a href="https://www.reddit.com/r/specializedtools/" rel="nofollow" _msttexthash="403052" _msthash="787">/r/SpecializedTools</a></li>
+<li><a href="https://www.reddit.com/r/MachinePorn/" rel="nofollow" _msttexthash="16016273" _msthash="788">/r/机器色情</a></li>
+<li><a href="https://www.reddit.com/r/toolporn/" rel="nofollow" _msttexthash="168220" _msthash="789">/r/ToolPorn</a></li>
+<li><a href="https://www.reddit.com/r/ThingsCutInHalfPorn/" rel="nofollow" _msttexthash="492219" _msthash="790">/r/ThingsCutInHalfPorn</a></li>
+</ul>
+<details><summary _msttexthash="3996642" _msthash="791">其他</summary><br>
+<ul dir="auto">
+<li _msttexthash="67551757" _msthash="792"><a href="https://www.reddit.com/r/aerospace/" rel="nofollow" _istranslated="1">/r/Aerospace</a>： 航空航天工程</li>
+<li _msttexthash="48515207" _msthash="793"><a href="https://www.reddit.com/r/AskElectronics/" rel="nofollow" _istranslated="1">/r/AskElectronics</a>： CE/EE 问答</li>
+<li _msttexthash="82519827" _msthash="794"><a href="https://www.reddit.com/r/AskScience/" rel="nofollow" _istranslated="1">/r/AskScience</a>： 严肃的科学问答</li>
+<li _msttexthash="40962077" _msthash="795"><a href="https://www.reddit.com/r/BioEngineering/" rel="nofollow" _istranslated="1">/r/生物工程</a>：生物</li>
+<li><a href="https://www.reddit.com/r/biology/" rel="nofollow" _msttexthash="11757837" _msthash="796">/r/生物学</a></li>
+<li _msttexthash="42591952" _msthash="797"><a href="https://www.reddit.com/r/biotech/" rel="nofollow" _istranslated="1">/r/Biotech</a>： 生物技术</li>
+<li _msttexthash="35763416" _msthash="798"><a href="https://www.reddit.com/r/chemicalengineering/" rel="nofollow" _istranslated="1">/r/ChemE</a>： 化学工程</li>
+<li><a href="https://www.reddit.com/r/chemistry/" rel="nofollow" _msttexthash="6132646" _msthash="799">/r/化学</a></li>
+<li><a href="https://www.reddit.com/r/coding/" rel="nofollow" _msttexthash="8644155" _msthash="800">/r/编码</a></li>
+<li><a href="https://www.reddit.com/r/ComputerScience/" rel="nofollow" _msttexthash="22844016" _msthash="801">/r/计算机科学</a></li>
+<li _msttexthash="36081266" _msthash="802"><a href="https://www.reddit.com/r/construction/" rel="nofollow" _istranslated="1">/r/Construction</a>： 建筑</li>
+<li _msttexthash="52824135" _msthash="803"><a href="https://www.reddit.com/r/csbooks/" rel="nofollow" _istranslated="1">/r/CSBooks</a>：计算机科学</li>
+<li _msttexthash="46339319" _msthash="804"><a href="https://www.reddit.com/r/ECE/" rel="nofollow" _istranslated="1">/r/ECE</a>：一般EE和CE讨论</li>
+<li _msttexthash="69239820" _msthash="805"><a href="https://www.reddit.com/r/ECEComponentExchange/" rel="nofollow" _istranslated="1">/r/ECEComponentExchange</a>：部件交换</li>
+<li _msttexthash="31520385" _msthash="806"><a href="https://www.reddit.com/r/electricalengineering/" rel="nofollow" _istranslated="1">/r/EE</a>： 电气工程</li>
+<li _msttexthash="43201262" _msthash="807"><a href="https://www.reddit.com/r/eebooks/" rel="nofollow" _istranslated="1">/r/EEBooks</a>： 电气工程</li>
+<li><a href="https://www.reddit.com/r/electronics/" rel="nofollow" _msttexthash="7265050" _msthash="808">/r/电子</a></li>
+<li><a href="https://www.reddit.com/r/lectures/" rel="nofollow" _msttexthash="8135725" _msthash="809">/r/讲座</a></li>
+<li><a href="https://www.reddit.com/r/math/" rel="nofollow" _msttexthash="6743386" _msthash="810">/r/数学</a></li>
+<li _msttexthash="29458403" _msthash="811"><a href="https://www.reddit.com/r/mathbooks/" rel="nofollow" _istranslated="1">/r/MathBooks</a>： 数学</li>
+<li><a href="https://www.reddit.com/r/physics/" rel="nofollow" _msttexthash="8076588" _msthash="812">/r/物理</a></li>
+<li _msttexthash="44581043" _msthash="813"><a href="https://www.reddit.com/r/physicsbooks/" rel="nofollow" _istranslated="1">/r/PhysicsBooks</a>： 物理学</li>
+<li><a href="https://www.reddit.com/r/programming/" rel="nofollow" _msttexthash="8718801" _msthash="814">/r/编程</a></li>
+<li><a href="https://www.reddit.com/r/science/" rel="nofollow" _msttexthash="7421596" _msthash="815">/r/科学</a></li>
+</ul>
 </details>
-
----
-<div align="right">
-
-<sup>[Back to Top](#toc)</sup> &Hat;
+<hr>
+<div align="right" dir="auto">
+<p dir="auto"><sup><a href="#toc" _msttexthash="15341105" _msthash="816">返回页首</a></sup> ^</p>
 </div>
-
-## <a name="publication"></a>Top Publication Venues for Different Fields
-
-### Journals
-
-#### Open Access
-* [DOAJ](https://doaj.org/), Directory of Open Acess Journals
-* [SCIRP](http://www.scirp.org/journal/mme/), Modern Mechanical Engineering
-* [SAGE journals](http://journals.sagepub.com/loi/adea), Advances in Mechanical Engineering
-* [The Royal Society](http://rspa.royalsocietypublishing.org/collection/mechanical-engineering)
-
-### Magazines
-* [Machine Design](http://machinedesign.com/)
-* [Mechanical Engineering Magazine](https://www.asme.org/about-asme/mechanical-engineering-magazine)
-* [Popular Mechanics](http://www.popularmechanics.com/)
-* [Popular Science](http://www.popsci.com/)
-
----
-<div align="right">
-
-<sup>[Back to Top](#toc)</sup> &Hat;
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a name="user-content-publication"></a><font _mstmutation="1" _msttexthash="47183058" _msthash="817">不同领域的顶级出版场所</font></h2><a id="user-content-top-publication-venues-for-different-fields" class="anchor" aria-label="永久链接：不同领域的顶级出版场所" href="#top-publication-venues-for-different-fields" _mstaria-label="1961349" _msthash="818"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="4586517" _msthash="819">期刊</h3><a id="user-content-journals" class="anchor" aria-label="永久链接：期刊" href="#journals" _mstaria-label="373516" _msthash="820"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="11643775" _msthash="821">开放获取</h4><a id="user-content-open-access" class="anchor" aria-label="永久链接：开放获取" href="#open-access" _mstaria-label="427336" _msthash="822"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li _msttexthash="39488020" _msthash="823"><a href="https://doaj.org/" rel="nofollow" _istranslated="1">DOAJ，Open</a> Acess 期刊目录</li>
+<li _msttexthash="42261817" _msthash="824"><a href="http://www.scirp.org/journal/mme/" rel="nofollow" _istranslated="1">SCIRP</a>，现代机械工程</li>
+<li _msttexthash="19312332" _msthash="825"><a href="http://journals.sagepub.com/loi/adea" rel="nofollow" _istranslated="1">SAGE 期刊</a>， Advances in Mechanical Engineering</li>
+<li><a href="http://rspa.royalsocietypublishing.org/collection/mechanical-engineering" rel="nofollow" _msttexthash="18473572" _msthash="826">英国皇家学会</a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="4957134" _msthash="827">杂志</h3><a id="user-content-magazines" class="anchor" aria-label="永久链接： 杂志" href="#magazines" _mstaria-label="402194" _msthash="828"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="http://machinedesign.com/" rel="nofollow" _msttexthash="13537654" _msthash="829">机器设计</a></li>
+<li><a href="https://www.asme.org/about-asme/mechanical-engineering-magazine" rel="nofollow" _msttexthash="19673407" _msthash="830">机械工程杂志</a></li>
+<li><a href="http://www.popularmechanics.com/" rel="nofollow" _msttexthash="311350" _msthash="831">Popular Mechanics</a></li>
+<li><a href="http://www.popsci.com/" rel="nofollow" _msttexthash="5564923" _msthash="832">科普</a></li>
+</ul>
+<hr>
+<div align="right" dir="auto">
+<p dir="auto"><sup><a href="#toc" _msttexthash="15341105" _msthash="833">返回页首</a></sup> ^</p>
 </div>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="6275412" _msthash="834">比赛</h2><a id="user-content-competitions" class="anchor" aria-label="永久链接： 比赛" href="#competitions" _mstaria-label="523978" _msthash="835"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
 
-## Competitions
-<!--### SAE Competitions-->
-
-#### Altair Contests
-
-###### [Altair Optimization Contest (AOC)](http://www.altairhyperworks.in/aoc/)
-
-### [ASME Competitions](https://www.asme.org/events/competitions)
-
-### Robotics Competitions
-* [Robocup Virtual Robot Competitions](http://robocup.org/) | [RoboCup 2017](http://www.robocup2017.org/)
- * Robocup Soccer
- * Robocup Rescue
- * Robocup Home
- * Robocup Industrial
- * Robocup Junior
-* [FIRST Robotics Competition](http://www.firstinspires.org/robotics/frc)
-* [Wearable Robotics Innovation Competition](https://wra5.wildapricot.org/page-18058) at [WearRAcon 17](https://wra5.wildapricot.org/event-2359716) by [Wearable Robotics Association](http://www.wearablerobotics.com/)
-* To be added
-
-### Other Competitions
-* [Elsevier 3D Printing Grand Challenge](http://www.materialstoday.com/elsevier-3d-printing-grand-challenge)
-
-## Challenges
-
-### CAD
-* [GrabCAD Challenge](https://grabcad.com/challenges), product design challenges
-* [Fusion360 Monthly Challenge](https://knowledge.autodesk.com/support/fusion-360/getting-started/caas/simplecontent/content/join-the-autodesk-fusion-360-monthly-challenge.html) `Autodesk Community Philippines`
-  * [Video Playlist](https://www.youtube.com/user/autodeskcomphil/playlists) `Youtube`
-* [Model Mania Challenge](http://blogs.solidworks.com/tech/2018/04/19-years-of-model-mania.html) `SOLIDWORKS World`
-* [Reddit CAD Challenge](https://www.reddit.com/r/cad/search?q=cad+challenge+%23&restrict_sr=on&sort=new&t=all&include_over_18=on) (*Inactive*) `/r/CAD`
-  * [Archived version](https://github.com/symbian9/reddit_cad_challenge) `Github`
-
-### Misc
-* [Hackaday Contest](https://hackaday.io/contests)
-* [Instructables Contests](http://www.instructables.com/contest/)
-
-
-## <a name="openprojects"></a>Open Source Design projects
-
-### Civilization Starter Kit Mechanical Design Project
-
-* [Open Source Ecology-Build Yourself](https://www.opensourceecology.org/)
-
-* [Open Source Ecology wiki](http://opensourceecology.org/wiki/Main_Page)
-
-* [Global Village Construction Set](http://opensourceecology.org/wiki/Global_Village_Construction_Set)
-
----
-<div align="right">
-
-<sup>[Back to Top](#toc)</sup> &Hat;
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="11977888" _msthash="836">Altair 竞赛</h4><a id="user-content-altair-contests" class="anchor" aria-label="永久链接：Altair 竞赛" href="#altair-contests" _mstaria-label="596999" _msthash="837"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h6 tabindex="-1" class="heading-element" dir="auto"><a href="http://www.altairhyperworks.in/aoc/" rel="nofollow" _msttexthash="53334294" _msthash="838">Altair 优化竞赛 （AOC）</a></h6><a id="user-content-altair-optimization-contest-aoc" class="anchor" aria-label="永久链接：Altair 优化竞赛 （AOC）" href="#altair-optimization-contest-aoc" _mstaria-label="1312766" _msthash="839"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><a href="https://www.asme.org/events/competitions" rel="nofollow" _msttexthash="10175620" _msthash="840">ASME 竞赛</a></h3><a id="user-content-asme-competitions" class="anchor" aria-label="永久链接： ASME 竞赛" href="#asme-competitions" _mstaria-label="661180" _msthash="841"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="16327025" _msthash="842">机器人竞赛</h3><a id="user-content-robotics-competitions" class="anchor" aria-label="永久链接： 机器人竞赛" href="#robotics-competitions" _mstaria-label="881231" _msthash="843"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li _msttexthash="86588372" _msthash="844"><a href="http://robocup.org/" rel="nofollow" _istranslated="1">Robocup 虚拟机器人竞赛</a> |<a href="http://www.robocup2017.org/" rel="nofollow" _istranslated="1">RoboCup 2017 机器人杯</a></li>
+<li _msttexthash="12489594" _msthash="845">Robocup 足球</li>
+<li _msttexthash="14094158" _msthash="846">机器人救援</li>
+<li _msttexthash="11351808" _msthash="847">Robocup 主页</li>
+<li _msttexthash="8369803" _msthash="848">Robocup 工业</li>
+<li _msttexthash="16329794" _msthash="849">Robocup 初级版</li>
+<li><a href="http://www.firstinspires.org/robotics/frc" rel="nofollow" _msttexthash="23552503" _msthash="850">FIRST 机器人大赛</a></li>
+<li _msttexthash="205897198" _msthash="851"><a href="https://wra5.wildapricot.org/event-2359716" rel="nofollow" _istranslated="1">WearRAcon 17</a> 由<a href="http://www.wearablerobotics.com/" rel="nofollow" _istranslated="1">可穿戴机器人协会</a><a href="https://wra5.wildapricot.org/page-18058" rel="nofollow" _istranslated="1">举办的可穿戴机器人创新竞赛</a></li>
+<li _msttexthash="7628127" _msthash="852">待添加</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="11930620" _msthash="853">其他比赛</h3><a id="user-content-other-competitions" class="anchor" aria-label="永久链接： 其他比赛" href="#other-competitions" _mstaria-label="734721" _msthash="854"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="http://www.materialstoday.com/elsevier-3d-printing-grand-challenge" rel="nofollow" _msttexthash="42737305" _msthash="855">爱思唯尔 3D 打印大挑战赛</a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="4919499" _msthash="856">挑战</h2><a id="user-content-challenges" class="anchor" aria-label="永久链接： 挑战" href="#challenges" _mstaria-label="432978" _msthash="857"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="29059095" _msthash="858">计算机辅助设计</h3><a id="user-content-cad" class="anchor" aria-label="永久链接：CAD" href="#cad" _mstaria-label="193518" _msthash="859"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li _msttexthash="86725041" _msthash="860"><a href="https://grabcad.com/challenges" rel="nofollow" _istranslated="1">GrabCAD 挑战</a>赛，产品设计挑战赛</li>
+<li><a href="https://knowledge.autodesk.com/support/fusion-360/getting-started/caas/simplecontent/content/join-the-autodesk-fusion-360-monthly-challenge.html" rel="nofollow" _msttexthash="32493279" _msthash="861">Fusion360 月度挑战赛</a> <code>Autodesk Community Philippines</code>
+<ul dir="auto">
+<li><a href="https://www.youtube.com/user/autodeskcomphil/playlists" rel="nofollow" _msttexthash="22108944" _msthash="862">视频播放列表</a> <code>Youtube</code></li>
+</ul>
+</li>
+<li><a href="http://blogs.solidworks.com/tech/2018/04/19-years-of-model-mania.html" rel="nofollow" _msttexthash="20567079" _msthash="863">Model Mania 挑战赛</a> <code>SOLIDWORKS World</code></li>
+<li><font _mstmutation="1" _msttexthash="78812994" _msthash="864"><a href="https://www.reddit.com/r/cad/search?q=cad+challenge+%23&amp;restrict_sr=on&amp;sort=new&amp;t=all&amp;include_over_18=on" rel="nofollow" _mstmutation="1" _istranslated="1">Reddit CAD 挑战赛</a>（<em _mstmutation="1" _istranslated="1">非活动</em>）</font>) <code>/r/CAD</code>
+<ul dir="auto">
+<li><a href="https://github.com/symbian9/reddit_cad_challenge" _msttexthash="11763648" _msthash="865">存档版本</a> <code>Github</code></li>
+</ul>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="6464926" _msthash="866">杂项</h3><a id="user-content-misc" class="anchor" aria-label="永久链接： 其他" href="#misc" _mstaria-label="242437" _msthash="867"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://hackaday.io/contests" rel="nofollow" _msttexthash="13019695" _msthash="868">Hackaday 比赛</a></li>
+<li><a href="http://www.instructables.com/contest/" rel="nofollow" _msttexthash="18291312" _msthash="869">Instructables 竞赛</a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a name="user-content-openprojects"></a><font _mstmutation="1" _msttexthash="24320439" _msthash="870">开源设计项目</font></h2><a id="user-content-open-source-design-projects" class="anchor" aria-label="永久链接：开源设计项目" href="#open-source-design-projects" _mstaria-label="1082042" _msthash="871"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="80430454" _msthash="872">Civilization Starter Kit 机械设计项目</h3><a id="user-content-civilization-starter-kit-mechanical-design-project" class="anchor" aria-label="永久链接：Civilization Starter Kit 机械设计项目" href="#civilization-starter-kit-mechanical-design-project" _mstaria-label="2492165" _msthash="873"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li>
+<p dir="auto"><a href="https://www.opensourceecology.org/" rel="nofollow" _msttexthash="21163506" _msthash="874">开源生态 - 自建</a></p>
+</li>
+<li>
+<p dir="auto"><a href="http://opensourceecology.org/wiki/Main_Page" rel="nofollow" _msttexthash="11930347" _msthash="875">开源生态 wiki</a></p>
+</li>
+<li>
+<p dir="auto"><a href="http://opensourceecology.org/wiki/Global_Village_Construction_Set" rel="nofollow" _msttexthash="25374609" _msthash="876">地球村建筑套装</a></p>
+</li>
+</ul>
+<hr>
+<div align="right" dir="auto">
+<p dir="auto"><sup><a href="#toc" _msttexthash="15341105" _msthash="877">返回页首</a></sup> ^</p>
 </div>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a name="user-content-certification"></a><font _mstmutation="1" _msttexthash="26996879" _msthash="878">资格/认证考试</font></h2><a id="user-content-qualifyingcertification-examinations" class="anchor" aria-label="永久链接： 资格/认证考试" href="#qualifyingcertification-examinations" _mstaria-label="1824394" _msthash="879"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="140224760" _msthash="880">资格考试是工程师的一种认证 - 美国的 PE，印度的 GATE</p>
+<p dir="auto"><strong _msttexthash="1311920077" _msthash="881">注意：如果您来自美国或印度以外的其他国家/地区，请随时添加与您所在国家/地区的专业认证或同等考试相关的部分。如果您不确定如何在 Github 中执行此操作，请给我发送电子邮件<a href="mailto:m2n037@gmail.com" _istranslated="1"></a></strong></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="12628954" _msthash="882">Altair 认证</h3><a id="user-content-altair-certification" class="anchor" aria-label="永久链接：Altair 认证" href="#altair-certification" _mstaria-label="812968" _msthash="883"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="http://certification.altairuniversity.com" rel="nofollow" _msttexthash="14875627" _msthash="884">认证网站</a></li>
+</ul>
 
-## <a name="certification"></a>Qualifying/Certification Examinations
-Qualifying examinations are a kind of certification to engineers - PE in USA, GATE in India
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="56419428" _msthash="885">美国机械工程及相关 PE 许可证</h3><a id="user-content-mechanical-engineering--related-pe-license-for-usa" class="anchor" aria-label="永久链接：美国机械工程及相关 PE 许可证" href="#mechanical-engineering--related-pe-license-for-usa" _mstaria-label="2589353" _msthash="886"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="3407339195" _msthash="887">PE 许可证可能是机械工程师可以获得的最有用的认证。PE 许可证实际上只是如果您想直接向公众提供服务时的一项要求，但无论如何拥有它仍然是一件好事。这是向雇主和客户表明您是一名称职的工程师的信号，而为考试而学习的行为将提高您的技能。该考试由 <a href="http://ncees.org/" rel="nofollow" _istranslated="1">NCEES - 全国工程和测量考试委员会</a>组织。</p>
+<p dir="auto"><a href="http://ncees.org/engineering/pe/" rel="nofollow" _msttexthash="43455867" _msthash="888">工程专业执照考试网站</a></p>
+<div class="markdown-heading" dir="auto"><h6 tabindex="-1" class="heading-element" dir="auto" _msttexthash="24757395" _msthash="889">有关考试的信息</h6><a id="user-content-information-about-the-exam" class="anchor" aria-label="永久链接：有关考试的信息" href="#information-about-the-exam" _mstaria-label="1026207" _msthash="890"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="http://ncees.org/exams/examinee-guide/" rel="nofollow" _msttexthash="18996588" _msthash="891">NCEES 考生指南</a></li>
+<li><a href="https://mechanicalc.com/posts/passing-the-pe-exam" rel="nofollow" _msttexthash="17473833" _msthash="892">通过 PE 考试</a></li>
+</ul>
 
-**Note: If you're from another country than USA or India, feel free to add a section relavant to your country's professional certification or equivalent examination. If you're not sure how to do that in Github, send me an [email](mailto:m2n037@gmail.com)**
+<div class="markdown-heading" dir="auto"><h6 tabindex="-1" class="heading-element" dir="auto" _msttexthash="18163054" _msthash="893">ME PE 专项书籍</h6><a id="user-content-me-pe-specific-books" class="anchor" aria-label="永久链接： ME PE 特定书籍" href="#me-pe-specific-books" _mstaria-label="690326" _msthash="894"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font _mstmutation="1" _msttexthash="116561939" _msthash="895"><a href="https://www.amazon.com/Mechanical-Engineering-Reference-Manual-Exam/dp/1591264146/ref=as_li_ss_tl?ie=UTF8&amp;linkCode=ll1&amp;tag=mechanicalc-20&amp;linkId=7defb8a434a541210f122c9306b2392d" rel="nofollow" _mstmutation="1" _istranslated="1">Michael R. Lindeburg - PE 考试机械工程参考手册</a></font><code>Amazon</code><sub><sup _msttexthash="11860056" _msthash="896">书号：978-1591264149</sup></sub></li>
+<li><font _mstmutation="1" _msttexthash="88308649" _msthash="897"><a href="https://www.amazon.com/Mechanical-PE-Practice-Examination-3rd/dp/1591264170/ref=as_li_ss_tl?_encoding=UTF8&amp;psc=1&amp;refRID=TZGSAJC0M4GVPQV089GD&amp;linkCode=ll1&amp;tag=mechanicalc-20&amp;linkId=d42940ff0d1bdb59bc2ae2fdc98126a3" rel="nofollow" _mstmutation="1" _istranslated="1">Michael R. Lindeburg - 机械体育模拟考试</a></font><code>Amazon</code><sub><sup _msttexthash="11858223" _msthash="898">书号： 978-1591264170</sup></sub></li>
+<li><font _mstmutation="1" _msttexthash="124642323" _msthash="899"><a href="https://www.amazon.com/Practice-Problems-Mechanical-Engineering-Comprehensive/dp/1591264154/" rel="nofollow" _mstmutation="1" _istranslated="1">Michael R. Lindeburg - 机械工程 PE 考试的练习题</a></font><code>Amazon</code><sub><sup _msttexthash="11859445" _msthash="900">书号：978-1591264156</sup></sub></li>
+<li><a href="https://www.amazon.com/PE-Mechanical-Engineering-Materials-Practice/dp/1932613773/ref=as_li_ss_tl?ie=UTF8&amp;linkCode=ll1&amp;tag=mechanicalc-20&amp;linkId=323726031869b0095d1a4641a056257a" rel="nofollow" _msttexthash="155980968" _msthash="901">NCEES - 体育机械工程：机械设计和材料实践考试</a> <code>Amazon</code></li>
+</ul>
 
-### Altair Certification
-* [Certification website](http://certification.altairuniversity.com)
-
-<!--### Solidworks Certifications -->
-
-### Mechanical Engineering & Related PE License for USA
-A PE license is probably the most useful certification that a mechanical engineer can obtain.  A PE license is only actually a requirement if you want to provide services directly to the public, but it is still a good thing to have regardless.  It is a sign to employers and clients that you are a competent engineer, and the act of studying for the exam will sharpen your skills. This examination is organized by [NCEES - National Council of Examiners for Engineering and Surveying](http://ncees.org/).
-
-[Official Practice of Engineering(PE) License Examination Website](http://ncees.org/engineering/pe/)
-
-###### Information about the Exam
-* [NCEES Examinee Guide](http://ncees.org/exams/examinee-guide/)
-* [Passing the PE Exam](https://mechanicalc.com/posts/passing-the-pe-exam)
-
-<!--###### Topper's Story or How to Prepare-->
-
-###### ME PE specific Books
-* [Michael R. Lindeburg - Mechanical Engineering Reference Manual for the PE Exam](https://www.amazon.com/Mechanical-Engineering-Reference-Manual-Exam/dp/1591264146/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=mechanicalc-20&linkId=7defb8a434a541210f122c9306b2392d) `Amazon`
-&emsp; <sub><sup>ISBN: 978-1591264149</sup></sub>
-* [Michael R. Lindeburg - Mechanical PE Practice Examination](https://www.amazon.com/Mechanical-PE-Practice-Examination-3rd/dp/1591264170/ref=as_li_ss_tl?_encoding=UTF8&psc=1&refRID=TZGSAJC0M4GVPQV089GD&linkCode=ll1&tag=mechanicalc-20&linkId=d42940ff0d1bdb59bc2ae2fdc98126a3) `Amazon`
-&emsp; <sub><sup>ISBN: 978-1591264170</sup></sub>
-* [Michael R. Lindeburg - Practice Problems for the Mechanical Engineering PE Exam](https://www.amazon.com/Practice-Problems-Mechanical-Engineering-Comprehensive/dp/1591264154/) `Amazon`
-&emsp; <sub><sup>ISBN: 978-1591264156</sup></sub>
-* [NCEES - PE Mechanical Engineering: Machine Design and Materials Practice Exam](https://www.amazon.com/PE-Mechanical-Engineering-Materials-Practice/dp/1932613773/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=mechanicalc-20&linkId=323726031869b0095d1a4641a056257a) `Amazon`
-
-<!-- ###### ME PE specific Tutorials/MOOCs -->
-
-
-### GATE for India
-[GATE Official Website](https://www.gate.iitr.ernet.in/)
-
-GATE or [Graduate Aptitute Test in Engineering](https://en.wikipedia.org/wiki/Graduate_Aptitude_Test_in_Engineering) is a qualifying examination conducted by a consortium of [Indian Institutes of Technology](https://en.wikipedia.org/wiki/Indian_Institutes_of_Technology) and [Indian Institute of Science Bangalore](http://www.iisc.ac.in/). Even though the official reason to conduct GATE is for post-graduate admissions only, PSUs and Govt. research entities often recruit students on the basis of GATE score.
-
-#### Information about the Exam
-
-#### Topper's Story or How to Prepare
-* [GATE 2015 Topper Interview: Ravi Shankar Mishra AIR 1 in CSE](https://engineering.careers360.com/articles/gate-2015-topper-interview-ravi-shankar-mishra-air-1-in-computer-science-engineering) 
-Although this interview is from a CSE topper, who happens to be a mechanical engineer by education, it shows the power of strategy in clearing an examination like GATE.
-
-#### GATE specific Books
-* [GATE yearwise and topicwise solved papers from 2003](https://www.nodia.co.in/gate-previous-year-solved-papers)
-
-#### GATE specific Websites
-* [Mechanical - GATE Overflow](http://me.gateoverflow.in/)
-
-###### PSU & Govt Entities Recruiting Through GATE
-These companies recruit engineering and management trainees using GATE score as qualifier. They are ordered alphabeticallly. Not all of them recruit every year which is indicated by Y/N
-
-An exhaustive list is available here - [List of 40+ PSUs Recruitment Through GATE 2017](https://testbook.com/blog/psus-recruitment-through-gate/)
-
-* [AAI - Airports Authority of India](http://www.aai.aero/employment_news/Employee_Recruitment_new.jsp) **N**
-* [NTPC - National Thermal Power Corporation](http://www.ntpccareers.net/) **Y**
-* [BARC - Bhaba Atomic Research Centre](https://www.i-register.co.in/barcengv17/frmdeclare.aspx) **Y**
-* [BBNL - Bharat Broadband Network Limited](http://www.bbnl.nic.in/index1.aspx?lid=43&lsid=281&pid=280&lev=2&langid=1) **N**
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="4503213" _msthash="902">印度 GATE</h3><a id="user-content-gate-for-india" class="anchor" aria-label="永久链接：印度 GATE" href="#gate-for-india" _mstaria-label="474461" _msthash="903"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="https://www.gate.iitr.ernet.in/" rel="nofollow" _msttexthash="18679414" _msthash="904">GATE 官方网站</a></p>
+<p dir="auto" _msttexthash="1503392332" _msthash="905">GATE 或<a href="https://en.wikipedia.org/wiki/Graduate_Aptitude_Test_in_Engineering" rel="nofollow" _istranslated="1">工程研究生能力倾向测试</a>是由<a href="https://en.wikipedia.org/wiki/Indian_Institutes_of_Technology" rel="nofollow" _istranslated="1">印度理工学院</a>和<a href="http://www.iisc.ac.in/" rel="nofollow" _istranslated="1">印度班加罗尔科学研究所</a>的财团进行的资格考试。尽管进行 GATE 的官方原因仅用于研究生招生，但 PSU 和政府研究实体经常根据 GATE 分数招募学生。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="24757395" _msthash="906">有关考试的信息</h4><a id="user-content-information-about-the-exam-1" class="anchor" aria-label="永久链接：有关考试的信息" href="#information-about-the-exam-1" _mstaria-label="1026207" _msthash="907"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="39981292" _msthash="908">Topper 的故事或如何准备</h4><a id="user-content-toppers-story-or-how-to-prepare" class="anchor" aria-label="永久链接：Topper 的故事或如何准备" href="#toppers-story-or-how-to-prepare" _mstaria-label="1246778" _msthash="909"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li _msttexthash="1437249229" _msthash="910"><a href="https://engineering.careers360.com/articles/gate-2015-topper-interview-ravi-shankar-mishra-air-1-in-computer-science-engineering" rel="nofollow" _istranslated="1">GATE 2015 Topper 访谈：CSE 中的 Ravi Shankar Mishra AIR 1</a>虽然这次采访来自一位 CSE 尖子，他恰好是一名受过教育的机械工程师，但它展示了策略在通过 GATE 等考试中的力量。</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="17064086" _msthash="911">GATE 特定书籍</h4><a id="user-content-gate-specific-books" class="anchor" aria-label="永久链接：GATE 特定书籍" href="#gate-specific-books" _mstaria-label="689052" _msthash="912"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://www.nodia.co.in/gate-previous-year-solved-papers" rel="nofollow" _msttexthash="68143491" _msthash="913">GATE 年度和主题解决的 2003 年论文</a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="19112769" _msthash="914">GATE 特定网站</h4><a id="user-content-gate-specific-websites" class="anchor" aria-label="永久链接：GATE 特定网站" href="#gate-specific-websites" _mstaria-label="837915" _msthash="915"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="http://me.gateoverflow.in/" rel="nofollow" _msttexthash="15849080" _msthash="916">机械 - GATE 溢流</a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h6 tabindex="-1" class="heading-element" dir="auto" _msttexthash="49208536" _msthash="917">PSU和政府实体通过GATE招聘</h6><a id="user-content-psu--govt-entities-recruiting-through-gate" class="anchor" aria-label="永久链接：PSU和政府实体通过GATE招聘" href="#psu--govt-entities-recruiting-through-gate" _mstaria-label="2081547" _msthash="918"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="643831344" _msthash="919">这些公司使用 GATE 分数作为限定条件来招聘工程和管理培训生。它们按字母顺序排序。并非所有人每年都招聘，由 Y/N 表示</p>
+<p dir="auto" _msttexthash="114614669" _msthash="920">详尽的名单可在此处获得 - <a href="https://testbook.com/blog/psus-recruitment-through-gate/" rel="nofollow" _istranslated="1">通过 GATE 2017 招募的 40+ PSU 名单</a></p>
+<ul dir="auto">
+<li _msttexthash="32978439" _msthash="921"><a href="http://www.aai.aero/employment_news/Employee_Recruitment_new.jsp" rel="nofollow" _istranslated="1">AAI - 印度机场管理局</a> <strong _istranslated="1">N</strong></li>
+<li _msttexthash="27677832" _msthash="922"><a href="http://www.ntpccareers.net/" rel="nofollow" _istranslated="1">NTPC - 国家火电公司</a> <strong _istranslated="1">Y</strong></li>
+<li _msttexthash="38568478" _msthash="923"><a href="https://www.i-register.co.in/barcengv17/frmdeclare.aspx" rel="nofollow" _istranslated="1">BARC - Bhaba 原子研究中心</a> <strong _istranslated="1">Y</strong></li>
+<li _msttexthash="61505925" _msthash="924"><a href="http://www.bbnl.nic.in/index1.aspx?lid=43&amp;lsid=281&amp;pid=280&amp;lev=2&amp;langid=1" rel="nofollow" _istranslated="1">BBNL - Bharat 宽带网络有限公司</a> <strong _istranslated="1">N</strong></li>
+</ul>
+</article></div>
